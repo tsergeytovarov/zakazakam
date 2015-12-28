@@ -108,7 +108,7 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: ['src/js/*.js'],
-        dest: 'build/js/script.js'
+        dest: 'build/js/script.min.js'
       }
     },
 
@@ -116,7 +116,7 @@ module.exports = function(grunt) {
     uglify: {
       start: {
         files: {
-          'build/js/script.min.js': ['build/js/script.js']
+          'build/js/script.min.js': ['build/js/script.min.js']
         }
       }
     },
@@ -216,7 +216,7 @@ module.exports = function(grunt) {
     'csscomb',
     'cssmin',
     'concat',
-    'uglify',
+    //'uglify',
     'imagemin',
     'browserSync',
     'watch'
@@ -233,7 +233,7 @@ module.exports = function(grunt) {
     'csscomb',
     'cssmin',
     'concat',
-    'uglify',
+    //'uglify',
     'imagemin',
     'htmllint'
   ]);
@@ -249,8 +249,8 @@ module.exports = function(grunt) {
 
   // только js
   grunt.registerTask('js', [
-    'concat',
-    'uglify'
+    'concat'
+    //'uglify'
   ]);
 
   // только картики и стили
