@@ -1,7 +1,14 @@
 body{
-
+  background: #c7c7c7;
 }
 
-.conatiner{
-  
+.wrapper{
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.container{
+  padding: 0 5%;
 }
