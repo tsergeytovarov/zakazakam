@@ -1,12 +1,47 @@
+html,
 body{
+  height: 100vh;
   background: #c7c7c7;
 }
 
-.wrapper{
-  min-width: 320px;
-  max-width: 640px;
+.global{
+  min-height: 100vh;
+  width: 640px;
   margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+
+  &--open{
+    .wrapper{
+      position: relative;
+      left: 530px;
+    }
+
+    .side-menu{
+      left: 0;
+    }
+
+    .btn-hamburger{
+      i{
+        background: transparent;
+
+        &::before{
+          top: 0px;
+          transform: rotate(45deg);
+        }
+
+        &::after{
+          bottom: 0px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+.wrapper{
   background: #fff;
+  transition: all 0.3s ease;
 }
 
 .container{

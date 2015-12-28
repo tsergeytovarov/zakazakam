@@ -1,0 +1,10 @@
+.side-menu{
+  width: 530px;
+  height: 100vh;
+  overflow-y: scroll;
+  background: url("../img/bg-menu.jpg") no-repeat center;
+  background-size: cover;
+  position: absolute;
+  left: -530px;
+  transition: all 0.3s ease;
+}

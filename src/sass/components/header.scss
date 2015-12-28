@@ -42,22 +42,6 @@
       bottom: -12px;
     }
   }
-
-  &.close{
-    i{
-      background: transparent;
-
-      &::before{
-        top: 0px;
-        transform: rotate(45deg);
-      }
-
-      &::after{
-        bottom: 0px;
-        transform: rotate(-45deg);
-      }
-    }
-  }
 }
 
 .cart{
