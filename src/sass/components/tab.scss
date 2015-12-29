@@ -1,0 +1,41 @@
+.js-tab{
+  display: none;
+  @include clearfix();
+
+  &.active{
+    display: block;
+  }
+}
+
+.tab-controls{
+  font-size: 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tab-control{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #555556;
+  font-weight: 700;
+  padding: 23px 50px;
+  background: #f6f7f8;
+  border: 1px solid $bb;
+
+  &.active{
+    background: #fff;
+  }
+
+  &:first-child{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  &:last-child{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}

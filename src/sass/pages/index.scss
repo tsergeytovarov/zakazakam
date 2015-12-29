@@ -1,0 +1,77 @@
+.catalog{
+  width: 48%;
+  height: 217px;
+  float: left;
+  background: #ccc;
+  margin-right: 4%;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 10;
+  }
+
+  &:nth-child(2n+2){
+    margin-right: 0;
+  }
+
+  @for $i from 1 to 7 {
+    &--#{$i} {
+      background: url("../img/catalog-#{$i}.jpg") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  & * {
+    position: relative;
+    z-index: 20;
+  }
+
+  &__title{
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 45px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  &__picture{
+
+  }
+}
+
+// section
+
+.section{
+  padding: 60px 0 40px;
+
+  &__title{
+    text-align: center;
+    font-size: 42px;
+    line-height: 50px;
+    color: #333;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+
+// big-catalog
+.big-catalog{
+  background: #f6f7f8;
+}
