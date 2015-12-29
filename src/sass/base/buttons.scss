@@ -5,27 +5,33 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  font-family: $base-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 50px;
+  border-radius: 10px;
 
-  &:hover,
-  &--hover{
-
+  &--fluid{
+    width: 100%;
   }
 
-  &:active,
-  &--active{
-
+  &--blue{
+    background: $blue;
+    border: 1px solid $blue;
   }
 
-  &--modify{
+  &--orange{
+    background: $orange;
+    border: 1px solid $orange;
+  }
 
-    &:hover,
-    &--hover{
-
-    }
-
-    &:active,
-    &--active{
-
-    }
+  &--transparent{
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 30px 46px;
   }
 }
