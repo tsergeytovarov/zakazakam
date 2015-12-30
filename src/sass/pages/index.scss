@@ -73,6 +73,10 @@
   &.instruction &__title{
     color: #fff;
   }
+
+  &.love &__title{
+    color: #333;
+  }
 }
 
 // big-catalog
@@ -101,5 +105,15 @@
     line-height: 36px;
     color: #c9e0f7;
     font-weight: 300;
+  }
+}
+
+// love
+.love{
+  background: #fff;
+  color: #333;
+
+  .instruction__text{
+    color: #6e6e6e;
   }
 }
