@@ -69,9 +69,37 @@
     margin: 0;
     margin-bottom: 40px;
   }
+
+  &.instruction &__title{
+    color: #fff;
+  }
 }
 
 // big-catalog
 .big-catalog{
   background: #f6f7f8;
+}
+
+// instruction
+.instruction{
+  background: #6099d5;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+
+  &__title{
+    font-size: 32px;
+    line-height: 34px;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-weight: 700;
+  }
+
+  &__text{
+    font-size: 28px;
+    line-height: 36px;
+    color: #c9e0f7;
+    font-weight: 300;
+  }
 }
