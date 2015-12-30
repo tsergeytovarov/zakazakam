@@ -1,17 +1,18 @@
 html,
 body{
-  height: 100vh;
+  height: 100%;
   background: #c7c7c7;
 }
 
 .global{
-  min-height: 100vh;
   width: 640px;
   margin: 0 auto;
   position: relative;
   overflow-x: hidden;
 
   &--open{
+    overflow: hidden;
+
     .wrapper{
       left: 530px;
     }
