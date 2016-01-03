@@ -71,7 +71,8 @@
   }
 
   &.instruction &__title,
-  &.mobile &__title{
+  &.mobile &__title,
+  &.feedback &__title{
     color: #fff;
   }
 
@@ -274,5 +275,36 @@
     font-size: 32px;
     line-height: 50px;
     color: #333;
+  }
+}
+
+// feedback
+.feedback{
+  background: #ffa114;
+  text-align: center;
+
+  &__text{
+    margin: 0;
+    color: #6b4000;
+    font-size: 28px;
+    line-height: 48px;
+    margin-bottom: 40px;
+  }
+
+  input{
+    border-radius: 500px;
+    border: 0;
+    background: #fff;
+    height: 90px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .btn--orange{
+    background: #ffa51f;
+    border: 1px solid #fff;
+    border-radius: 500px;
   }
 }
