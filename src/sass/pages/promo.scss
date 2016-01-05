@@ -1,0 +1,77 @@
+.promo-card{
+  margin-bottom: 50px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  &__top{
+    padding: 40px 0 40px 25px;
+    @include clearfix;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__logo{
+    float: left;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 4px;
+    background: #fff;
+
+    img{
+      display: block;
+      max-width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__timer{
+    float: right;
+    width: 220px;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 25px;
+    background: $orange url("../img/ico/card-watch.svg") no-repeat 160px 15px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  &__content{
+    border: 1px solid #eceded;
+    border-top: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 25px 20px;
+    @include clearfix;
+  }
+
+  &__title{
+    margin: 0;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__text{
+    margin: 0;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 300;
+    color: #333333;
+    opacity: .6;
+    margin-bottom: 20px;
+  }
+
+  &__btn{
+    float: right;
+  }
+}
