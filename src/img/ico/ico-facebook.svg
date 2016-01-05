@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="52" viewBox="0 0 28 52">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 24px;
+        fill: #335794;
+        font-family: "Open Sans";
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text id="f" class="cls-1" transform="translate(-1.179 52.179) scale(2.779 2.8)">f</text>
+</svg>
