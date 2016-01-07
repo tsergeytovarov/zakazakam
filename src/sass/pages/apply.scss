@@ -40,6 +40,22 @@
     }
   }
 
+  &__form-2{
+
+    input{
+      width: 380px;
+      background: #fff url("../img/bg-apply-input.png") no-repeat bottom center;
+      border: 0;
+      padding: 0;
+      font-size: 72px;
+      line-height: 72px;
+      height: 92px;
+      letter-spacing: 60px;
+      padding-left: 20px;
+      overflow: hidden;
+    }
+  }
+
   &__form-text{
     font-size: 22px;
     line-height: 30px;
@@ -47,5 +63,15 @@
     opacity: .6;
     margin-top: 40px;
     margin-bottom: 40px;
+
+    svg{
+      vertical-align: middle;
+      display: inline-block;
+      margin: 0 20px;
+    }
+  }
+
+  &__mail{
+    margin-top: 40px;
   }
 }
