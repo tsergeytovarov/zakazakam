@@ -1,0 +1,123 @@
+.balli{
+  .section__title{
+    text-align: left;
+    font-size: 42px;
+    line-height: 60px;
+  }
+
+  &__subtitle{
+    margin: 0;
+    font-size: 28px;
+    line-height: 36px;
+    color: #6e6e6e;
+    margin-bottom: 30px;
+  }
+}
+
+.balli-item{
+  text-align: center;
+  margin-bottom: 40px;
+
+  img{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  h2{
+    margin: 0;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  &__price{
+    & > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    del{
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 600;
+      opacity: .5;
+      margin-right: 10px;
+    }
+
+    .btn{
+      font-size: 32px;
+      font-style: italic;
+      text-transform: lowercase;
+      font-weight: 400;
+      padding: 20px 35px;
+      background: #9ace65;
+      background: linear-gradient(to bottom, #9ace65 0%,#81c342 100%);
+      border-radius: 3px;
+
+      b{
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.balli-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li{
+    padding-left: 100px;
+    position: relative;
+    counter-increment: li;
+    margin-bottom: 60px;
+
+    &::before{
+      content: counter(li);
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 36px;
+      line-height: 55px;
+      text-align: center;
+      font-weight: 700;
+      color: #fff;
+      background: $orange;
+      width: 55px;
+      height: 55px;
+      border-radius: 100%;
+    }
+  }
+
+  &__title{
+    color: #333333;
+    font-size: 42px;
+    line-height: 50px;
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 400;
+  }
+
+  &__text{
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 400;
+    color: #656565;
+    margin: 0;
+    margin-bottom: 40px;
+    opacity: .6;
+  }
+
+  .social{
+    text-align: left;
+
+    &__btn{
+      margin-right: 30px;
+    }
+  }
+}

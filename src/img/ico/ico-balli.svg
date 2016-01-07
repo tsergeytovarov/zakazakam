@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="32" viewBox="0 0 28 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b86a9e;
+        fill-rule: evenodd;
+        opacity: 0.35;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="213" y="7559" width="28" height="32" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#669cd6"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Storage_copy_7" data-name="Storage copy 7" class="cls-1" d="M227,7559c-7.72,0-14,3.14-14,7v18c0,3.86,6.28,7,14,7s14-3.14,14-7v-18C241,7562.14,234.72,7559,227,7559Zm0,3c7.258,0,11,2.8,11,4s-3.742,4-11,4-11-2.81-11-4S219.742,7562,227,7562Zm11,22c0,1.19-3.742,4-11,4s-11-2.81-11-4v-4.69a23.836,23.836,0,0,0,22,0V7584Zm-11-5c-7.258,0-11-2.81-11-4v-4.69a23.836,23.836,0,0,0,22,0V7575C238,7576.19,234.258,7579,227,7579Z" transform="translate(-213 -7559)"/>
+</svg>
