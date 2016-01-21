@@ -1,0 +1,91 @@
+@@include('htmltpl/head.html')
+
+<div class="user-block">
+  <img class="user-block__image" src="img/user.jpg" width="128" height="128" alt="">
+  <p class="user-block__name">Константин Константинопольский</p>
+  <p class="user-block__balls"><span>4800</span> баллов</p>
+</div>
+<nav class="user-navigation">
+  <ul class="user-navigation__list">
+    <li class="user-navigation__list-item">
+      <a href="cabinet.html" class="user-navigation__link">
+        <img src="img/ico/ico-user.png" alt="" class="user-navigation__icon">
+      </a>
+    </li>
+    <li class="user-navigation__list-item">
+      <a href="cabinet-settings.html" class="user-navigation__link">
+        <img src="img/ico/ico-gear.png" alt="" class="user-navigation__icon">
+      </a>
+    </li>
+    <li class="user-navigation__list-item current">
+      <a href="cabinet-address.html" class="user-navigation__link">
+        <img src="img/ico/ico-address.png" alt="" class="user-navigation__icon">
+      </a>
+    </li>
+    <li class="user-navigation__list-item">
+      <a href="cabinet-history.html" class="user-navigation__link">
+        <img src="img/ico/ico-history--current.png" alt="" class="user-navigation__icon">
+      </a>
+    </li>
+  </ul>
+</nav>
+<section class="user-history">
+  <div class="container">
+    <h2 class="user-history__title">История заказов</span></h2>
+    <div class="order-card">
+      <div class="order-card__info">
+        <div class="order-card__points">
+          <span>+ <span>129</span> баллов</span>
+          <img src="img/ico/ico-gift.png" alt="" class="order-card__icon">
+        </div>
+        <div class="order-card__place">Ollis Pizza</div>
+        <div class="order-card__date">9 марта 2015,14:50</div>
+        <div class="order-card__total">
+          <span>Заказ на сумму</span>
+          <span class="amount"><span>780</span> Р</span>
+        </div>
+      </div>
+      <div class="order-card__items-list">
+        <div class="order-card__list-toggle">Развернуть список блюд <span>(2)</span></div>
+        <ul class="order-card__list">
+          <li class="order-card__list-item">Пицца Ассорти</li>
+          <li class="order-card__list-item">Пицца Ассорти</li>
+        </ul>
+      </div>
+      <button type="button" class="order-card__reorder">Повторить заказ</button>
+    </div>
+    <div class="order-card">
+      <div class="order-card__info">
+        <div class="order-card__points">
+          <span>+ <span>300</span> баллов</span>
+          <img src="img/ico/ico-gift.png" alt="" class="order-card__icon">
+        </div>
+        <div class="order-card__place">Шашлыкович</div>
+        <div class="order-card__date">9 марта 2015,14:50</div>
+        <div class="order-card__total">
+          <span>Заказ на сумму</span>
+          <span class="amount"><span>2100</span> Р</span>
+        </div>
+      </div>
+      <div class="order-card__items-list">
+        <div class="order-card__list-toggle">Развернуть список блюд <span>(11)</span></div>
+        <ul class="order-card__list">
+          <li class="order-card__list-item">Пицца Ассорти</li>
+          <li class="order-card__list-item">Пицца Ассорти</li>
+          <li class="order-card__list-item">Пицца Ассорти</li>
+          <li class="order-card__list-item">Пицца Ассорти</li>
+          <li class="order-card__list-item">Пицца Ассорти</li>
+          <li class="order-card__list-item">Пицца Ассорти</li>
+          <li class="order-card__list-item">Пицца Ассорти</li>
+          <li class="order-card__list-item">Пицца Ассорти</li>
+          <li class="order-card__list-item">Пицца Ассорти</li>
+          <li class="order-card__list-item">Пицца Ассорти</li>
+          <li class="order-card__list-item">Пицца Ассорти</li>
+        </ul>
+      </div>
+      <button type="button" class="order-card__reorder">Повторить заказ</button>
+    </div>
+  </div>
+</section>
+
+@@include('htmltpl/footer.html')

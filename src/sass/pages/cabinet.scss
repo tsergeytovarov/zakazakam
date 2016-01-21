@@ -159,3 +159,139 @@
     padding: 27px 45px;
   }
 }
+
+.user-history {
+  padding-bottom: 10px;
+  background-color: #f4f4f4;
+
+  &__title {
+    margin: 0;
+    padding: 24px 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #333;
+  }
+}
+
+.order-card {
+  margin-bottom: 50px;
+  background-color: #fff;
+  border: 1px solid #ebeded;
+  border-radius: 6px;
+
+  &__info {
+    position: relative;
+    padding: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $bb;
+  }
+
+  &__points {
+    position: absolute;
+    top: 26px;
+    right: 0;
+    padding: 15px 20px;
+    padding-right: 60px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    background-color: $orange;
+    border-radius: 6px 0 0 6px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+  }
+
+  &__place {
+    margin-right: 40%;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 62px;
+  }
+
+  &__date {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 44px;
+    color: #333;
+  }
+
+  &__total {
+    position: relative;
+    padding-right: 40%;
+    font-size: 32px;
+    line-height: 58px;
+    color: #333;
+
+    .amount {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-weight: 700;
+    }
+  }
+
+  &__items-list {
+    position: relative;
+
+    &.active {
+
+      .order-card__list {
+        display: block;
+      }
+    }
+  }
+
+  &__list-toggle {
+    padding: 32px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+    color: #959595;
+    background-image: url("../img/ico/ico-arr-down.png");
+    background-repeat: no-repeat;
+    background-position: top 46px right 50px;
+    opacity: .5;
+  }
+
+  &__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    background-color: #fff;
+    border-top: 1px solid $bb;
+    border-radius: 0 0 6px 6px;
+    z-index: 1;
+  }
+
+  &__list-item {
+    padding: 10px 5%;
+  }
+
+  &__reorder {
+    display: block;
+    padding: 25px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 38px;
+    color: #fff;
+    background-color: $green;
+    border: none;
+    outline: none;
+    border-radius: 0 0 6px 6px;
+  }
+}
