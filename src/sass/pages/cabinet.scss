@@ -298,6 +298,66 @@
 
 .general-info {
   background-color: #f4f4f4;
+
+  &__block-title {
+    margin: 0;
+    padding: 24px 5%;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #333;
+  }
+
+  &__block {
+    background-color: #fff;
+    border-top: 1px solid $bb;
+    border-bottom: 1px solid $bb;
+
+    &--badges {
+      padding: 32px 5%;
+      padding-bottom: 12px;
+    }
+  }
+
+  &__add-card {
+    padding: 32px 5%;
+  }
+
+  &__badges {
+    margin-right: -2%;
+    font-size: 0;
+  }
+
+  .btn--add-card {
+    position: relative;
+    padding-left: 87px;
+    padding-top: 27px;
+    padding-top: 27px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 45px;
+      margin-top: -12px;
+      width: 4px;
+      height: 24px;
+      background-color: #fff;
+      border-radius: 2px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 35px;
+      margin-top: -2px;
+      width: 24px;
+      height: 4px;
+      background-color: #fff;
+      border-radius: 2px;
+    }
+  }
 }
 
 .settings-form {
@@ -449,5 +509,123 @@
       margin-bottom: 15px;
       width: 78%;
     }
+  }
+}
+
+.user-card {
+  position: relative;
+  padding: 30px 5%;
+  border-bottom: 1px solid $bb;
+
+  &__delete {
+    position: absolute;
+    top: 34px;
+    right: 5%;
+  }
+
+  &__delete-image {
+    display: block;
+  }
+
+  &__number {
+    padding-left: 80px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #333;
+    letter-spacing: 3px;
+    background-image: url("../img/mastercard.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    span {
+      font-weight: 400;
+      font-size: 30px;
+      letter-spacing: 0;
+    }
+  }
+}
+
+.badge {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+  margin-right: 2%;
+  width: 23%;
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+}
+
+.review-card {
+  padding: 35px 5%;
+  border-bottom: 1px solid $bb;
+
+  &__info-row {
+    position: relative;
+    padding-bottom: 35px;
+  }
+
+  &__place {
+    margin-right: 140px;
+    font-size: 0;
+  }
+
+  &__place-logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+    height: auto;
+  }
+
+  &__info {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding-left: 25px;
+    width: 77%;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 58px;
+    color: #333;
+  }
+
+  &__data {
+    font-size: 24px;
+    line-height: 30px;
+    color: #959595;
+  }
+
+  &__star-rating {
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+    font-size: 0;
+
+    span {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 5px;
+      width: 21px;
+      height: 20px;
+      background-image: url("../img/ico/ico-star.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &.yellow {
+        background-image: url("../img/ico/ico-star--yellow.png");
+      }
+    }
+  }
+
+  &__content {
+    font-size: 30px;
+    line-height: 40px;
+    color: #333;
+    opacity: .8;
   }
 }
