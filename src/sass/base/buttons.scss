@@ -44,4 +44,12 @@
     border-radius: 5px;
     border: 0;
   }
+
+  &--bordered {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: #a3a3a3;
+    background-color: transparent;
+    border: 1px solid $bb;
+  }
 }
