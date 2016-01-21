@@ -1,0 +1,62 @@
+@@include('htmltpl/head.html')
+
+<form action="#" method="post" class="order-form">
+	<div class="basket-unit">
+		<div class="basket-unit__title">
+			<div class="basket-unit-close">
+				<img src="img/ico/ico-close.png" alt="" class="basket-unit-close__image">
+			</div>
+			<span>Pizza Ollis</span>
+		</div>
+		<div class="basket-item">
+      <div class="basket-item__image-wrapper">
+        <img src="img/product-1.jpg" alt="" class="basket-item__image">
+      </div>
+			<div class="basket-item__info">
+				<div class="basket-item__title">Пицца Ассорти</div>
+				<div class="basket-item__description">765 гр., Колбаса салями, грибы...</div>
+				<div class="basket-item__row">
+					<div class="basket-item__qnty">
+						<button type="button" class="btn btn--green btn--decrease">-</button>
+						<input type="text" value="1">
+						<button type="button" class="btn btn--green btn--increase">+</button>
+					</div>
+					<div class="basket-item__price"><span>609</span> Р</div>
+				</div>
+			</div>
+		</div>
+		<div class="basket-item">
+			<div class="basket-item__image-wrapper">
+        <img src="img/product-2.jpg" alt="" class="basket-item__image">
+      </div>
+			<div class="basket-item__info">
+				<div class="basket-item__title">Пицца Ассорти</div>
+				<div class="basket-item__description">765 гр., Колбаса салями, бекон...</div>
+				<div class="basket-item__extra">Фирменный соус <span class="price">+ 20 Р</span></div>
+				<div class="basket-item__extra">Ананас <span class="price">+ 35 Р</span></div>
+				<div class="basket-item__row">
+					<div class="basket-item__qnty">
+						<button type="button" class="btn btn--green btn--decrease">-</button>
+						<input type="text" value="20">
+						<button type="button" class="btn btn--green btn--increase">+</button>
+					</div>
+					<div class="basket-item__price"><span>745</span> Р</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menu-link">
+		<a href="#" class="btn btn--gray">
+			<img src="img/ico/ico-arr.png" alt="">
+			<span>вернуться в меню</span>
+		</a>
+	</div>
+	<div class="payment">
+		<div class="payment__delivery">Стоимость доставки <span>Бесплатно</span></div>
+		<div class="payment__total">Итого к оплате <span>1649 Р</span></div>
+    <button type="submit" class="checkin-btn">
+      <span class="checkin-btn__text">Оформить заказ</span>
+      <span class="checkin-btn__points">За этот заказ вы получите <span>377</span> баллов</span>
+    </button>
+	</div>
+</form>
