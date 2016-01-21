@@ -1,0 +1,60 @@
+@@include('htmltpl/head.html')
+
+<div class="user-block">
+  <img class="user-block__image" src="img/user.jpg" width="128" height="128" alt="">
+  <p class="user-block__name">Константин Константинопольский</p>
+  <p class="user-block__balls"><span>4800</span> баллов</p>
+</div>
+<nav class="user-navigation">
+  <ul class="user-navigation__list">
+    <li class="user-navigation__list-item">
+      <a href="cabinet.html" class="user-navigation__link">
+        <img src="img/ico/ico-user.png" alt="" class="user-navigation__icon">
+      </a>
+    </li>
+    <li class="user-navigation__list-item">
+      <a href="cabinet-settings.html" class="user-navigation__link">
+        <img src="img/ico/ico-gear.png" alt="" class="user-navigation__icon">
+      </a>
+    </li>
+    <li class="user-navigation__list-item current">
+      <a href="cabinet-address.html" class="user-navigation__link">
+        <img src="img/ico/ico-address--current.png" alt="" class="user-navigation__icon">
+      </a>
+    </li>
+    <li class="user-navigation__list-item">
+      <a href="cabinet-history.html" class="user-navigation__link">
+        <img src="img/ico/ico-history.png" alt="" class="user-navigation__icon">
+      </a>
+    </li>
+  </ul>
+</nav>
+<section class="user-address">
+  <div class="container">
+    <h2 class="user-address__title">Мои адреса: <span>Санкт-Петербург</span></h2>
+    <div class="address">
+      <div class="address__type">Домашний адрес</div>
+      <div class="address__text">Санкт-Петербург, Энгельса, 154</div>
+      <div class="address__close">
+        <img src="img/ico/ico-close.png" alt="" class="address__close-icon">
+      </div>
+    </div>
+    <div class="new-address-form">
+      <form action="#" method="post">
+        <h3 class="new-address-form__title">Добавить новый</h3>
+        <input type="text" id="address-type" placeholder="Название">
+        <input type="text" id="current-city" value="Санкт-Петербург">
+        <input type="text" id="street" placeholder="Улица">
+        <div class="new-address-form__fields-wrapper">
+          <input type="text" id="house" placeholder="Дом">
+          <input type="text" id="building" placeholder="Корпус">
+          <input type="text" id="apartment" placeholder="Квартира">
+        </div>
+        <textarea name="comment" id="comment" rows="3" placeholder="Комментарий"></textarea>
+        <button type="submit" class="btn btn--green">Добавить адрес</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+@@include('htmltpl/footer.html')
