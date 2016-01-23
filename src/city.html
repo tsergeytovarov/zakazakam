@@ -1,0 +1,289 @@
+@@include('htmltpl/head.html')
+
+<div class="search-location">
+  <div class="search-location__field-wrapper">
+    <input type="text" class="search-location__street" value="Руставели улица">
+    <input type="text" class="search-location__house" placeholder="Дом">
+    <div class="search-location__select-wrapper">
+      <select id="some-select" class="search-location__select">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="sorting-block">
+  <button type="button" class="btn btn--blue">Фильтры и сортировка</button>
+</div>
+<div class="sorting-results">
+  <div class="category-card recent">
+    <div class="flag-blue">Вы недавно заказывали</div>
+    <div class="category-card__image-block">
+      <div class="category-card__logo-wrapper">
+        <img src="img/logo-papa.png" alt="" class="category-card__logo">
+      </div>
+      <div class="category-card__rating-row">
+        <div class="category-card__star-rating">
+          <img src="img/stars.png" alt="">
+          <span class="rating five-stars"></span>
+        </div>
+        <div class="category-card__reviews">(877)</div>
+      </div>
+    </div>
+    <div class="category-card__info-block">
+      <div class="category-card__title">Papa Johns</div>
+      <div class="category-card__type">Американская / Мексиканская...</div>
+      <div class="category-card__row">
+        <div class="category-card__distance">0,74 км</div>
+        <div class="category-card__visa">
+          <img src="img/visa.png" alt="">
+        </div>
+        <div class="category-card__mastercard">
+          <img src="img/mastercard.png" alt="">
+        </div>
+      </div>
+      <table class="category-card__info-table">
+        <tr>
+          <th>Заказ от:</th>
+          <th>Доставка:</th>
+          <th>Время:</th>
+        </tr>
+        <tr>
+          <td><span class="price">450</span> Р</td>
+          <td><span class="delivery-price">0</span> Р</td>
+          <td><span class="time">60</span> мин</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="category-card recent">
+    <div class="flag-points"><span>Еда<br>за&nbsp;баллы!</span></div>
+    <div class="flag-blue">Вы недавно заказывали</div>
+    <div class="category-card__image-block">
+      <div class="category-card__logo-wrapper">
+        <img src="img/logo-mumu.png" alt="" class="category-card__logo">
+      </div>
+      <div class="category-card__rating-row">
+        <div class="category-card__star-rating">
+          <img src="img/stars.png" alt="">
+          <span class="rating four-and-half-stars"></span>
+        </div>
+        <div class="category-card__reviews">(344)</div>
+      </div>
+    </div>
+    <div class="category-card__info-block">
+      <div class="category-card__title">МУ-МУ</div>
+      <div class="category-card__type">Американская / Итальянская</div>
+      <div class="category-card__row">
+        <div class="category-card__distance">0,9 км</div>
+      </div>
+      <table class="category-card__info-table">
+        <tr>
+          <th>Заказ от:</th>
+          <th>Доставка:</th>
+          <th>Время:</th>
+        </tr>
+        <tr>
+          <td><span class="price">1900</span> Р</td>
+          <td><span class="delivery-price">200</span> Р</td>
+          <td><span class="time">30</span> мин</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="category-card">
+    <div class="category-card__image-block">
+      <div class="category-card__logo-wrapper">
+        <img src="img/logo-ilpatio-big.png" alt="" class="category-card__logo">
+      </div>
+      <div class="category-card__rating-row">
+        <div class="category-card__star-rating">
+          <img src="img/stars.png" alt="">
+          <span class="rating four-stars"></span>
+        </div>
+        <div class="category-card__reviews">(201)</div>
+      </div>
+    </div>
+    <div class="category-card__info-block">
+      <div class="category-card__title">IL ПАТИО</div>
+      <div class="category-card__type">Американская / Бургеры</div>
+      <div class="category-card__row">
+        <div class="category-card__distance">1,54 км</div>
+        <div class="category-card__visa">
+          <img src="img/visa.png" alt="">
+        </div>
+        <div class="category-card__mastercard">
+          <img src="img/mastercard.png" alt="">
+        </div>
+      </div>
+      <table class="category-card__info-table">
+        <tr>
+          <th>Заказ от:</th>
+          <th>Доставка:</th>
+          <th>Время:</th>
+        </tr>
+        <tr>
+          <td><span class="price">1</span> Р</td>
+          <td><span class="delivery-price">100</span> Р</td>
+          <td><span class="time">1,5</span> час</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="category-card">
+    <div class="category-card__preorder">Ресторан еще не работает, возможен предварительный заказ</div>
+    <div class="category-card__image-block">
+      <div class="category-card__logo-wrapper">
+        <img src="img/logo-sh-house.png" alt="" class="category-card__logo">
+        <div class="category-card__opening-soon">До открытия 13 ч. 27 мин.</div>
+      </div>
+      <div class="category-card__rating-row">
+        <div class="category-card__star-rating">
+          <img src="img/stars.png" alt="">
+          <span class="rating three-and-half-stars"></span>
+        </div>
+        <div class="category-card__reviews">(23)</div>
+      </div>
+    </div>
+    <div class="category-card__info-block">
+      <div class="category-card__title">Шашлычный домик</div>
+      <div class="category-card__type">Американская / Итальянская</div>
+      <div class="category-card__row">
+        <div class="category-card__distance">0,9 км</div>
+      </div>
+      <table class="category-card__info-table">
+        <tr>
+          <th>Заказ от:</th>
+          <th>Доставка:</th>
+          <th>Время:</th>
+        </tr>
+        <tr>
+          <td><span class="price">1900</span> Р</td>
+          <td><span class="delivery-price">200</span> Р</td>
+          <td><span class="time">30</span> мин</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="category-card">
+    <div class="category-card__image-block">
+      <div class="category-card__logo-wrapper">
+        <img src="img/logo-bagrationi.png" alt="" class="category-card__logo">
+      </div>
+      <div class="category-card__rating-row">
+        <div class="category-card__star-rating">
+          <img src="img/stars.png" alt="">
+          <span class="rating five-stars"></span>
+        </div>
+        <div class="category-card__reviews">(199)</div>
+      </div>
+    </div>
+    <div class="category-card__info-block">
+      <div class="category-card__title">Багратиони</div>
+      <div class="category-card__type">Американская / Бургеры</div>
+      <div class="category-card__row">
+        <div class="category-card__distance">1,54 км</div>
+      </div>
+      <table class="category-card__info-table">
+        <tr>
+          <th>Заказ от:</th>
+          <th>Доставка:</th>
+          <th>Время:</th>
+        </tr>
+        <tr>
+          <td><span class="price">900</span> Р</td>
+          <td><span class="delivery-price">0</span> Р</td>
+          <td><span class="time">1,5</span> час</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="show-more">
+    <a href="#" class="btn btn--gray btn--show-more">показать еще заведения</a>
+  </div>
+  <section class="section mobile category">
+    <h2 class="section__title">Заказывать через<br>приложение еще проще!</h2>
+    <a href="#" class="mobile__btn">
+      <img src="img/btn-ios.png" alt="">
+    </a>
+    <a href="#" class="mobile__btn">
+      <img src="img/btn-android.png" alt="">
+    </a>
+  </section>
+  <section class="section about-us">
+    <div class="container">
+      <h2 class="about-us__title">ZakaZaka: доставка любимой еды на дом!</h2>
+      <p class="about-us__text">Любые блюда из лучших ресторанов города - прямо у вас дома, если вы заказываете еду с ZakaZaka! Это так удобно ипросто, всего три простых шага: подбираете подходящий по ассортименту и ценам ресторан; делаете заказ еды по меню этого заведения; получаете оперативную доставку в сроки, указанные на сайте для каждого конкретного ресторана. Мы сотрудничаем со многими заведениями города, потому вы сможете найти оптимальный вариант непосредственно в вашем районе, чтобы доставка заняла минимум времени. Наши курьеры привезут горячие блюда - горячими, холодные - охлажденными, а напитки - оптимальной температуры. В результате вы получите все необходимое для того, чтобы устроить люксовый ужин, не выходя из дома или офиса.</p>
+      <a href="#" class="about-us__show-more">Далее</a>
+    </div>
+  </section>
+</div>
+
+<div class="color-overlay"></div>
+<div class="modal modal--city opened">
+  <div class="modal-close">
+    <img src="img/ico/ico-close.svg" alt="" class="modal-close__image">
+  </div>
+  <h2 class="modal__title">Выберите ваш город</h2>
+  <ul class="letters-list">
+    <li class="letters-list__item">
+      <span>Б</span>
+      <ul class="cities-list">
+        <li class="cities-list__item">
+          <a href="#" class="cities-list__item-link">Барнаул</a>
+        </li>
+        <li class="cities-list__item">
+          <a href="#" class="cities-list__item-link">Белгород</a>
+        </li>
+        <li class="cities-list__item">
+          <a href="#" class="cities-list__item-link">Брянск</a>
+        </li>
+      </ul>
+    </li>
+    <li class="letters-list__item">
+      <span>В</span>
+      <ul class="cities-list">
+        <li class="cities-list__item">
+          <a href="#" class="cities-list__item-link">Владивосток</a>
+        </li>
+        <li class="cities-list__item">
+          <a href="#" class="cities-list__item-link">Владимир</a>
+        </li>
+        <li class="cities-list__item">
+          <a href="#" class="cities-list__item-link">Волгоград</a>
+        </li>
+        <li class="cities-list__item">
+          <a href="#" class="cities-list__item-link">Воронеж</a>
+        </li>
+      </ul>
+    </li>
+    <li class="letters-list__item">
+      <span>Е</span>
+      <ul class="cities-list">
+        <li class="cities-list__item">
+          <a href="#" class="cities-list__item-link">Екатеринбург</a>
+        </li>
+      </ul>
+    </li>
+    <li class="letters-list__item">
+      <span>И</span>
+      <ul class="cities-list">
+        <li class="cities-list__item">
+          <a href="#" class="cities-list__item-link">Ижевск</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+@@include('htmltpl/footer.html')
+
+
+
+
+
+
+
+
+
