@@ -602,22 +602,60 @@
 
   &__star-rating {
     position: absolute;
-    bottom: 35px;
+    bottom: 50px;
     right: 0;
     font-size: 0;
+    background-color: #dadada;
 
-    span {
-      display: inline-block;
-      vertical-align: top;
-      margin-left: 5px;
-      width: 21px;
-      height: 20px;
-      background-image: url("../img/ico/ico-star.png");
-      background-repeat: no-repeat;
-      background-size: contain;
+    img {
+      position: relative;
+      display: block;
+      z-index: 1;
+    }
 
-      &.yellow {
-        background-image: url("../img/ico/ico-star--yellow.png");
+    .rating {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      background-color: $orange;
+      z-index: 0;
+
+      &.one-star {
+        width: 20%;
+      }
+
+      &.one-and-half-star {
+        width: 30.5%;
+      }
+
+      &.two-stars {
+        width: 40%;
+      }
+
+      &.two-and-half-stars {
+        width: 50.5%;
+      }
+
+      &.three-stars {
+        width: 60%;
+      }
+
+      &.three-and-half-stars {
+        width: 70.5%;
+      }
+
+      &.four-stars {
+        width: 80%;
+      }
+
+      &.four-and-half-stars {
+        width: 91.5%;
+      }
+
+      &.five-stars {
+        width: 100%;
       }
     }
   }
@@ -627,5 +665,70 @@
     line-height: 40px;
     color: #333;
     opacity: .8;
+  }
+}
+
+.section {
+
+  &.mobile.category {
+    padding-top: 40px;
+    padding-bottom: 45px;
+
+    .section__title {
+      margin-bottom: 10px;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.about-us {
+  padding-top: 65px;
+  padding-bottom: 15px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 62px;
+    color: #4f555d;
+  }
+
+  &__text {
+    position: relative;
+    margin: 0;
+    margin-bottom: 50px;
+    height: 138px;
+    font-size: 26px;
+    line-height: 46px;
+    color: #4f555d;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: linear-gradient(to top, #fff, transparent);
+    }
+
+    &.full {
+      height: auto;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &__show-more {
+    font-size: 26px;
+    line-height: 36px;
+    color: #4f555d;
   }
 }

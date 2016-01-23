@@ -52,4 +52,14 @@
     background-color: transparent;
     border: 1px solid $bb;
   }
+
+  &--gray {
+    color: rgba(0,0,0,.4);
+    background-color: #e5e5e5;
+  }
+
+  &--show-more {
+    width: 100%;
+    line-height: 30px;
+  }
 }
