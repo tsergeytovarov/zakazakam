@@ -1,0 +1,64 @@
+@@include('htmltpl/head.html')
+
+<div class="contacts-main">
+  <div class="contacts-main__content">
+    <div class="contacts-main__title">Свяжитесь с нами по телефону:</div>
+    <div class="contacts-main__phone">8 (800) 555-58-50</div>
+  </div>
+</div>
+<section class="section address-section">
+  <div class="container">
+    <h2 class="address-section__title">Адрес</h2>
+    <p class="address-section__content">г. Санкт-Петербург, Торфяная дорога, д. 7, лит.Ф, офис 1008</p>
+  </div>
+</section>
+<div class="map-wrapper" id="map-canvas"></div>
+<section class="section details-section">
+  <div class="container">
+    <h2 class="details-section__title">Вопросы, предложения и претензии по качеству оказания услуг</h2>
+    <p class="details-section__info details-section__info--first-line">E-mail: info@zakazaka.ru</p>
+    <p class="details-section__info">ООО "Сайт-агрегатор"</p>
+    <p class="details-section__info">ИНН: 7802829596, КПП: 780201001, ОГРН: 1137847240740</p>
+    <p class="details-section__info">Юр. адрес: 194100, Санкт-Петербург, Большой Сампсониевский пр, д. 68, лит. Н, пом. 5-Н</p>
+    <p class="details-section__info">Почт. адрес: 197374, Санкт-Петербург, Торфяная дорога, д. 7, лит.Ф, офис 1008</p>
+  </div>
+</section>
+<section class="section about-us">
+  <div class="container">
+    <h2 class="about-us__title">ZakaZaka: доставка любимой еды на дом!</h2>
+    <p class="about-us__text">Любые блюда из лучших ресторанов города - прямо у вас дома, если вы заказываете еду с ZakaZaka! Это так удобно ипросто, всего три простых шага: подбираете подходящий по ассортименту и ценам ресторан; делаете заказ еды по меню этого заведения; получаете оперативную доставку в сроки, указанные на сайте для каждого конкретного ресторана. Мы сотрудничаем со многими заведениями города, потому вы сможете найти оптимальный вариант непосредственно в вашем районе, чтобы доставка заняла минимум времени. Наши курьеры привезут горячие блюда - горячими, холодные - охлажденными, а напитки - оптимальной температуры. В результате вы получите все необходимое для того, чтобы устроить люксовый ужин, не выходя из дома или офиса.</p>
+    <a href="#" class="about-us__show-more">Далее</a>
+  </div>
+</section>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
+<script>
+  function initialize() {
+    var mapOptions = {
+      zoom: 16,
+      center: new google.maps.LatLng(59.9893848, 30.2575332),
+      scrollwheel: false
+    }
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+@@include('htmltpl/footer.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
