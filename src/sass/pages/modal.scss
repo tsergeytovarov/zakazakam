@@ -63,6 +63,11 @@
       right: 32px;
     }
   }
+
+  &--enter {
+    padding-bottom: 300px;
+    text-align: center;
+  }
 }
 
 .address-form {
@@ -194,5 +199,160 @@
     font-size: 30px;
     line-height: 34px;
     color: #262626;
+  }
+}
+
+.enter-form {
+  text-align: left;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0 42px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 26px;
+    line-height: 48px;
+    color: #333;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    margin-bottom: 32px;
+    padding: 28px 25px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: #333;
+    border: 1px solid #e7e7e7;
+  }
+
+  input::-webkit-input-placeholder{
+    color: #737373;
+  }
+  input::-moz-placeholde{
+    color: #737373;
+  }
+
+  .btn--green {
+    margin-top: 18px;
+    margin-bottom: 27px;
+    padding: 30px 15px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.retreive-password {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 26px;
+  line-height: 42px;
+  color: #333;
+  opacity: .45;
+}
+
+.social-login {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 5%;
+  padding-bottom: 35px;
+  max-height: 235px;
+  font-size: 0;
+  background-color: #fafafa;
+  border-top: 1px solid $bb;
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 36px;
+    color: #333;
+  }
+
+  &__notice {
+    margin-top: 25px;
+    font-size: 26px;
+    line-height: 36px;
+    color: #333;
+    opacity: .65;
+  }
+
+  &__register {
+    color: #333;
+  }
+}
+
+.login-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin-left: 1.45%;
+  margin-right: 1.45%;
+  margin-bottom: 20px;
+  width: 29%;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 60px;
+  color: #fff;
+  border-radius: 8px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--fb {
+    padding-left: 35px;
+    background-color: #4c68b3;
+
+    &:before {
+      top: 19px;
+      margin-left: -58px;
+      width: 12px;
+      height: 24px;
+      background-image: url("../img/ico/ico-fb.svg");
+    }
+  }
+
+  &--vk {
+    padding-left: 45px;
+    background-color: #426b9a;
+
+    &:before {
+      top: 19px;
+      margin-left: -69px;
+      width: 32px;
+      height: 20px;
+      background-image: url("../img/ico/ico-vk-white.svg");
+    }
+  }
+
+  &--mailru {
+    padding-left: 15px;
+    background-color: #3688c9;
+
+    &:before {
+      top: 16px;
+      margin-left: -67px;
+      width: 31px;
+      height: 29px;
+      background-image: url("../img/ico/ico-mailru.png");
+    }
   }
 }

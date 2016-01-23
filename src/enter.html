@@ -1,0 +1,41 @@
+@@include('htmltpl/head.html')
+
+<div class="modal modal--enter opened">
+  <div class="modal-close">
+    <img src="img/ico/ico-close.svg" alt="" class="modal-close__image">
+  </div>
+  <form action="#" method="post" class="enter-form">
+    <h2 class="enter-form__title">Вход</h2>
+    <input type="text" id="login" placeholder="Логин">
+    <input type="password" id="password" placeholder="Пароль">
+    <label for="phone" class="enter-form__label">Или используя мобильный телефон:</label>
+    <input type="text" id="phone" placeholder="Телефон">
+    <button type="submit" class="btn btn--green">Войти</button>
+  </form>
+  <a href="#" class="retreive-password">Забыли пароль?</a>
+  <div class="social-login">
+    <div class="social-login__text">Используя аккаунт из социальной сети</div>
+    <a href="#" class="login-btn login-btn--fb">facebook</a>
+    <a href="#" class="login-btn login-btn--vk">вконтакте</a>
+    <a href="#" class="login-btn login-btn--mailru">Mail.ru</a>
+    <div class="social-login__notice">Еще не с нами? <a href="" class="social-login__register">Зарегистрируйтесь!</a></div>
+  </div>
+</div>
+
+@@include('htmltpl/footer.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
