@@ -1,0 +1,36 @@
+@@include('htmltpl/head.html')
+
+<section class="section order-section">
+  <h2 class="order-section__title">Оформление заказа</h2>
+  <form action="#" method="post" class="order-form">
+    <div class="container">
+      <input type="text" id="username" placeholder="Имя">
+      <input type="text" id="phone" placeholder="Телефон">
+      <input type="text" id="address" placeholder="Адрес">
+      <textarea name="" id="" class="order-form__textarea" rows="3" placeholder="Комментарий"></textarea>
+      <input type="radio" name="payment-type" id="cash" checked>
+      <label for="cash" class="order-form__label">Наличными</label>
+      <input type="radio" name="payment-type" id="card">
+      <label for="card" class="order-form__label">Картой курьеру</label>
+    </div>
+    <button type="submit" class="order-btn">заказать</button>
+  </form>
+</section>
+
+@@include('htmltpl/footer.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
