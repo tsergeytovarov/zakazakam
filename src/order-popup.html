@@ -1,0 +1,129 @@
+@@include('htmltpl/head.html')
+
+<section class="section order-section order-section--new">
+  <h2 class="order-section__title">Оформление заказа</h2>
+  <form action="#" method="post" class="new-order-form">
+    <div class="new-order-form__subtitle">Введите ваши контактные данные</div>
+    <div class="new-order-form__field-wrapper">
+      <label for="username" class="new-order-form__text-label">Имя</label>
+      <input type="text" id="username" value="Филипп">
+    </div>
+    <div class="new-order-form__field-wrapper">
+      <label for="phone" class="new-order-form__text-label">Телефон</label>
+      <input type="text" id="phone" value="+ 7 (952) 377-97-97">
+    </div>
+    <div class="new-order-form__subtitle">Адрес доставки</div>
+    <div class="new-order-form__field-wrapper new-order-form__field-wrapper--address">
+      <input type="text" id="street" value="Конногвардейский бульвар">
+      <button type="button" class="address-btn">
+        <img src="img/ico/ico-pen.svg" alt="" class="address-btn__image">
+      </button>
+    </div>
+    <div class="new-order-form__fieldset-wrapper">
+      <div class="new-order-form__input-wrapper">
+        <input type="text" id="house" value="6" autofocus>
+        <label for="house" class="new-order-form__input-label">Дом</label>
+      </div>
+      <div class="new-order-form__input-wrapper">
+        <input type="text" id="corpus">
+        <label for="corpus" class="new-order-form__input-label">Корпус</label>
+      </div>
+      <div class="new-order-form__input-wrapper">
+        <input type="text" id="building">
+        <label for="building" class="new-order-form__input-label">Строение</label>
+      </div>
+      <div class="new-order-form__input-wrapper">
+        <input type="text" id="apartment">
+        <label for="apartment" class="new-order-form__input-label">Квартира</label>
+      </div>
+    </div>
+    <div class="new-order-form__subtitle">Способ оплаты</div>
+    <div class="tab-controls tab-controls--payment">
+      <button type="button" class="tab-control tab-control--payment" data-tab="js-tab-1">Наличными</button>
+      <button type="button" class="tab-control tab-control--payment active" data-tab="js-tab-2">Кредитной картой</button>
+    </div>
+    <div class="js-tabs">
+      <div class="js-tab" id="js-tab-1"></div>
+      <div class="js-tab active" id="js-tab-2">
+        <div class="new-order-form__field-wrapper new-order-form__field-wrapper--card">
+          <img src="img/mastercard.png" alt="" class="icon-card">
+          <input type="text" id="card-number" value="&middot;&middot;&middot;&middot; &middot;&middot;&middot;&middot; &middot;&middot;&middot;&middot; 1085">
+          <div class="icon-check">
+            <img src="img/ico/ico-check-white.svg" alt="">
+          </div>
+        </div>
+        <div class="add-card">
+          <div class="add-card__text">Использовать новую карту</div>
+          <button type="button" class="add-card__btn">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="new-order-form__subtitle">Комментарий к заказу</div>
+    <textarea name="order-comment" id="order-comment" rows="1" class="new-order-form__textarea" placeholder="Детали доставки или что-то еще..."></textarea>
+    <button type="submit" class="order-btn">заказать и оплатить онлайн</button>
+  </form>
+</section>
+
+<div class="color-overlay"></div>
+<div class="modal modal--delivery opened">
+  <div class="modal-close">
+    <img src="img/ico/ico-close.svg" alt="" class="modal-close__image">
+  </div>
+  <h3 class="modal__title">К сожалению,<br>доставка из ресторана «Две палочки» не осуществляется по вашему адресу</h3>
+  <div class="modal__subtitle">Для вас доставят рестораны:</div>
+  <div class="modal__items-wrapper">
+    <a href="#" class="restaurant-card">
+      <img src="img/logo-bagrationi.png" alt="" class="restaurant-card__image">
+      <h4 class="restaurant-card__title">Багратиони</h4>
+      <div class="restaurant-card__rating-row">
+        <div class="restaurant-card__star-rating">
+          <img src="img/stars.png" alt="">
+          <span class="rating five-stars"></span>
+        </div>
+        <div class="restaurant-card__reviews">(199)</div>
+      </div>
+    </a>
+    <a href="#" class="restaurant-card">
+      <img src="img/logo-ilpatio.png" alt="" class="restaurant-card__image">
+      <h4 class="restaurant-card__title">IL PATIO</h4>
+      <div class="restaurant-card__rating-row">
+        <div class="restaurant-card__star-rating">
+          <img src="img/stars.png" alt="">
+          <span class="rating four-stars"></span>
+        </div>
+        <div class="restaurant-card__reviews">(201)</div>
+      </div>
+    </a>
+    <a href="#" class="restaurant-card">
+      <img src="img/logo-mumu.png" alt="" class="restaurant-card__image">
+      <h4 class="restaurant-card__title">МУ-МУ</h4>
+      <div class="restaurant-card__rating-row">
+        <div class="restaurant-card__star-rating">
+          <img src="img/stars.png" alt="">
+          <span class="rating four-and-half-stars"></span>
+        </div>
+        <div class="restaurant-card__reviews">(344)</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+@@include('htmltpl/footer.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
