@@ -14,6 +14,13 @@
     background-color: #f3f3f3;
     border-bottom: 1px solid $bb;
   }
+
+  &--new {
+
+    .order-section__title {
+      background-color: #fff;
+    }
+  }
 }
 
 .order-form {
@@ -92,4 +99,219 @@
   background-color: $green;
   border: none;
   outline: none;
+}
+
+.new-order-form {
+  padding-bottom: 128px;
+
+  &__subtitle {
+    margin: 0;
+    padding: 40px 5%;
+    padding-bottom: 27px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #959595;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid $bb;
+  }
+
+  &__field-wrapper {
+    position: relative;
+    padding: 25px 5%;
+    font-size: 0;
+    border-bottom: 1px solid $bb;
+
+    input[type="text"] {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0;
+      width: 67%;
+      font-size: 30px;
+      line-height: 40px;
+      border: none;
+      outline: none;
+    }
+
+    &--address {
+      padding: 36px 5%;
+      border-bottom: none;
+
+      input[type="text"] {
+        width: 100%;
+      }
+    }
+
+    &--card {
+      padding: 30px 5%;
+
+      .icon-card {
+        position: absolute;
+        top: 30px;
+        left: 5%;
+        height: 36px;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 50px;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 1px;
+      }
+
+      .icon-check {
+        position: absolute;
+        top: 28px;
+        right: 5%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        background-color: $green;
+        border-radius: 50%;
+
+        img {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  &__text-label {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    font-size: 30px;
+    line-height: 40px;
+    color: #262626;
+    opacity: .8;
+  }
+
+  &__fieldset-wrapper {
+    padding: 40px 5%;
+    padding-top: 0;
+    font-size: 0;
+  }
+
+  &__input-label {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    color: #959595;
+    background-color: #f9f9f9;
+    border-top: 1px solid $bb;
+  }
+
+  &__input-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin-right: 2.93%;
+    width: 22.8%;
+    border: 1px solid $bb;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    input[type="text"] {
+      margin-bottom: 0;
+      font-size: 48px;
+      line-height: 80px;
+      text-align: center;
+      background-color: #f9f9f9;
+      border: none;
+
+      &:focus {
+        background-color: #fff;
+
+        & + .new-order-form__input-label {
+          color: $green;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  &__textarea {
+    display: block;
+    padding: 30px 5%;
+    height: 103px;
+    font-size: 30px;
+    line-height: 40px;
+    border: none;
+    border-bottom: 1px solid $bb;
+  }
+}
+
+.address-btn {
+  position: absolute;
+  top: 36px;
+  right: 5%;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &__image {
+    display: block;
+  }
+}
+
+.add-card {
+  position: relative;
+  padding: 28px 5%;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 40px;
+  color: #262626;
+  opacity: .8;
+  border-bottom: 1px solid $bb;
+
+  &__text {
+    padding-right: 50px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 28px;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    background-color: #eceded;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 12px;
+      height: 4px;
+      width: 16px;
+      background-color: #fff;
+      border-radius: 2px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 18px;
+      height: 16px;
+      width: 4px;
+      background-color: #fff;
+      border-radius: 2px;
+    }
+  }
 }
