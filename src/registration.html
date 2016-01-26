@@ -1,0 +1,41 @@
+@@include('htmltpl/head.html')
+
+<div class="modal modal--registration opened">
+  <div class="modal-close">
+    <img src="img/ico/ico-close.svg" alt="" class="modal-close__image">
+  </div>
+  <form action="#" method="post" class="registration-form">
+    <h2 class="registration-form__title">Регистрация</h2>
+    <input type="text" id="login" placeholder="Логин">
+    <input type="text" id="email" placeholder="E-mail">
+    <input type="password" id="password" placeholder="Пароль">
+    <input type="text" id="phone" placeholder="Телефон">
+    <input type="checkbox" id="agree">
+    <label for="agree" class="registration-form__checkbox-label">Я принимаю <a href="#" class="registration-form__link">Условия&nbsp;пользовательского соглашения</a></label>
+    <button type="submit" class="btn btn--green">регистрация</button>
+  </form>
+  <div class="social-login">
+    <div class="social-login__text">Используя аккаунт из социальной сети</div>
+    <a href="#" class="login-btn login-btn--fb">facebook</a>
+    <a href="#" class="login-btn login-btn--vk">вконтакте</a>
+    <a href="#" class="login-btn login-btn--mailru">Mail.ru</a>
+  </div>
+</div>
+
+@@include('htmltpl/footer.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
