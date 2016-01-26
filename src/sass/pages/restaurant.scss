@@ -307,3 +307,73 @@
     }
   }
 }
+
+.restaurant-info {
+  padding: 50px 5%;
+  padding-bottom: 20px;
+
+
+  &__block-title {
+    margin: 0;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 68px;
+    color: #333;
+  }
+
+  &__text {
+    margin-top: 22px;
+    margin-bottom: 55px;
+    padding-right: 25px;
+    font-size: 28px;
+    line-height: 36px;
+    color: #333;
+    opacity: .8;
+  }
+
+  &__kitchen {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 40px;
+    color: #333;
+    opacity: .8;
+  }
+}
+
+.opening-hours-table {
+  margin-top: 10px;
+  margin-bottom: 45px;
+  width: 100%;
+
+  td {
+    width: 50%;
+    line-height: 56px;
+    color: #333;
+    opacity: .8;
+
+    &:first-child {
+      text-align: left;
+      font-size: 28px;
+    }
+
+    &:last-child {
+      text-align: right;
+      font-size: 32px;
+    }
+  }
+}
+
+.payment-options {
+  margin-top: 25px;
+  margin-bottom: 65px;
+  font-size: 0;
+}
+
+.payment-option {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 25px;
+  height: 75px;
+  width: auto;
+}
