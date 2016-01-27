@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   background-color: rgba(38,38,38,.45);
+  z-index: 2;
 }
 
 .modal {
@@ -20,7 +21,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: #fff;
-  z-index: 1;
+  z-index: 3;
 
   &.opened {
     display: block;
@@ -52,8 +53,57 @@
     color: rgba(0,0,0,.7);
   }
 
+  &__block-title {
+    margin: 0;
+    margin-bottom: 35px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: #333;
+    opacity: .9;
+  }
+
   &__items-wrapper {
     font-size: 0;
+  }
+
+  &__filters-block {
+    padding-top: 50px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $bb;
+  }
+
+  &__checkbox-label {
+    position: relative;
+    display: block;
+    margin-bottom: 46px;
+    padding-left: 70px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #262626;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 36px;
+      height: 36px;
+      border: 2px solid $bb;
+      border-radius: 50%;
+    }
+  }
+
+  input[type="checkbox"]:checked + .modal__checkbox-label {
+
+    &:before {
+      background-color: $green;
+      background-image: url("../img/ico/ico-check-white.svg");
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: top 11px left 8px;
+      border: 2px solid $green;
+    }
   }
 
   &--city {
@@ -107,6 +157,48 @@
       font-size: 36px;
       line-height: 48px;
       color: #333;
+    }
+  }
+
+  &--restaurant {
+    top: 350px;
+    bottom: auto;
+    left: 5%;
+    right: 5%;
+    padding: 70px 30px;
+    min-height: 350px;
+    width: auto;
+    text-align: center;
+    background-color: $orange;
+    border-radius: 5px;
+
+    .modal-close {
+      top: 30px;
+      right: 30px;
+    }
+
+    .modal__title {
+      margin-bottom: 45px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 48px;
+      color: #fff;
+    }
+  }
+
+  &--sort {
+
+    min-height: 100vh;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .modal-close {
+      top: 33px;
+      right: 33px;
     }
   }
 }

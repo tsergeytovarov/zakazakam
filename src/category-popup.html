@@ -1,0 +1,376 @@
+@@include('htmltpl/head.html')
+
+<div class="search-location">
+  <div class="search-location__field-wrapper">
+    <input type="text" class="search-location__street" value="Руставели улица">
+    <input type="text" class="search-location__house" placeholder="Дом">
+    <div class="search-location__select-wrapper">
+      <select id="some-select" class="search-location__select">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="sorting-block">
+  <button type="button" class="btn btn--blue">Фильтры и сортировка</button>
+</div>
+<div class="sorting-results">
+  <div class="category-card recent">
+    <div class="flag-blue">Вы недавно заказывали</div>
+    <div class="category-card__image-block">
+      <div class="category-card__logo-wrapper">
+        <img src="img/logo-papa.png" alt="" class="category-card__logo">
+      </div>
+      <div class="category-card__rating-row">
+        <div class="category-card__star-rating">
+          <svg xmlns="http://www.w3.org/2000/svg" width="119.219" height="19" viewBox="0 0 119.219 19">
+          <defs>
+            <linearGradient id="Gradient01">
+              <stop offset="0%" stop-color="#ffa115" />
+              <stop offset="100%" stop-color="#ffa115" />
+            </linearGradient>
+            <style>
+              .cls-11 {
+                /*fill: #ffa115;*/
+                fill-rule: evenodd;
+              }
+            </style>
+            </defs>
+            <path id="star_copy_4" data-name="star copy 4" class="cls-11" fill="url(#Gradient01)" d="M142.941,366.682a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.518-5.063a1.063,1.063,0,0,0-1.9,0l-2.52,5.065-5.631.812a1.055,1.055,0,0,0-.855.717,1.04,1.04,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.054,1.054,0,0,0,.421,1.028,1.082,1.082,0,0,0,1.118.081l5.036-2.629,5.037,2.629a1.065,1.065,0,0,0,.492.121h0a1.067,1.067,0,0,0,.624-0.2,1.055,1.055,0,0,0,.422-1.029L138.6,371.7l4.075-3.942A1.042,1.042,0,0,0,142.941,366.682Zm-24.568,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.519-5.063a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.269,1.079L102.8,371.7l-0.962,5.567a1.054,1.054,0,0,0,.421,1.028,1.08,1.08,0,0,0,1.117.081l5.037-2.629,5.036,2.629a1.072,1.072,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23l-0.962-5.567,4.075-3.942A1.043,1.043,0,0,0,118.373,366.682Zm-24.569,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812L84.8,360.09a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081l5.037-2.629,5.037,2.629a1.069,1.069,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23L89.461,371.7l4.075-3.942A1.042,1.042,0,0,0,93.8,366.682Zm-24.568,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812L60.23,360.09a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942L52.7,377.27a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081l5.037-2.629,5.036,2.629a1.069,1.069,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23L64.892,371.7l4.075-3.942A1.042,1.042,0,0,0,69.236,366.682Zm-25.478,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.519-5.063a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081L33.8,375.75l5.037,2.629a1.069,1.069,0,0,0,.492.121h0a1.056,1.056,0,0,0,1.045-1.23L39.414,371.7l4.075-3.942A1.042,1.042,0,0,0,43.758,366.682Z" transform="translate(-23.781 -359.5)"/>
+          </svg>
+        </div>
+        <div class="category-card__reviews">(877)</div>
+      </div>
+    </div>
+    <div class="category-card__info-block">
+      <div class="category-card__title">Papa Johns</div>
+      <div class="category-card__type">Американская / Мексиканская...</div>
+      <div class="category-card__row">
+        <div class="category-card__distance">0,74 км</div>
+        <div class="category-card__visa">
+          <img src="img/visa.png" alt="">
+        </div>
+        <div class="category-card__mastercard">
+          <img src="img/mastercard.png" alt="">
+        </div>
+      </div>
+      <table class="category-card__info-table">
+        <tr>
+          <th>Заказ от:</th>
+          <th>Доставка:</th>
+          <th>Время:</th>
+        </tr>
+        <tr>
+          <td><span class="price">450</span> Р</td>
+          <td><span class="delivery-price">0</span> Р</td>
+          <td><span class="time">60</span> мин</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="category-card recent">
+    <div class="flag-points"><span>Еда<br>за&nbsp;баллы!</span></div>
+    <div class="flag-blue">Вы недавно заказывали</div>
+    <div class="category-card__image-block">
+      <div class="category-card__logo-wrapper">
+        <img src="img/logo-mumu.png" alt="" class="category-card__logo">
+      </div>
+      <div class="category-card__rating-row">
+        <div class="category-card__star-rating">
+          <svg xmlns="http://www.w3.org/2000/svg" width="119.219" height="19" viewBox="0 0 119.219 19">
+          <defs>
+            <linearGradient id="Gradient02">
+              <stop offset="0%" stop-color="#ffa115" />
+              <stop offset="71%" stop-color="#ffa115" />
+              <stop offset="71%" stop-color="#dadada" />
+              <stop offset="100%" stop-color="#dadada" />
+            </linearGradient>
+            <style>
+              .cls-11 {
+                /*fill: #ffa115;*/
+                fill-rule: evenodd;
+              }
+            </style>
+            </defs>
+            <path id="star_copy_4" data-name="star copy 4" class="cls-11" fill="url(#Gradient02)" d="M142.941,366.682a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.518-5.063a1.063,1.063,0,0,0-1.9,0l-2.52,5.065-5.631.812a1.055,1.055,0,0,0-.855.717,1.04,1.04,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.054,1.054,0,0,0,.421,1.028,1.082,1.082,0,0,0,1.118.081l5.036-2.629,5.037,2.629a1.065,1.065,0,0,0,.492.121h0a1.067,1.067,0,0,0,.624-0.2,1.055,1.055,0,0,0,.422-1.029L138.6,371.7l4.075-3.942A1.042,1.042,0,0,0,142.941,366.682Zm-24.568,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.519-5.063a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.269,1.079L102.8,371.7l-0.962,5.567a1.054,1.054,0,0,0,.421,1.028,1.08,1.08,0,0,0,1.117.081l5.037-2.629,5.036,2.629a1.072,1.072,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23l-0.962-5.567,4.075-3.942A1.043,1.043,0,0,0,118.373,366.682Zm-24.569,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812L84.8,360.09a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081l5.037-2.629,5.037,2.629a1.069,1.069,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23L89.461,371.7l4.075-3.942A1.042,1.042,0,0,0,93.8,366.682Zm-24.568,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812L60.23,360.09a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942L52.7,377.27a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081l5.037-2.629,5.036,2.629a1.069,1.069,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23L64.892,371.7l4.075-3.942A1.042,1.042,0,0,0,69.236,366.682Zm-25.478,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.519-5.063a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081L33.8,375.75l5.037,2.629a1.069,1.069,0,0,0,.492.121h0a1.056,1.056,0,0,0,1.045-1.23L39.414,371.7l4.075-3.942A1.042,1.042,0,0,0,43.758,366.682Z" transform="translate(-23.781 -359.5)"/>
+          </svg>
+        </div>
+        <div class="category-card__reviews">(344)</div>
+      </div>
+    </div>
+    <div class="category-card__info-block">
+      <div class="category-card__title">МУ-МУ</div>
+      <div class="category-card__type">Американская / Итальянская</div>
+      <div class="category-card__row">
+        <div class="category-card__distance">0,9 км</div>
+      </div>
+      <table class="category-card__info-table">
+        <tr>
+          <th>Заказ от:</th>
+          <th>Доставка:</th>
+          <th>Время:</th>
+        </tr>
+        <tr>
+          <td><span class="price">1900</span> Р</td>
+          <td><span class="delivery-price">200</span> Р</td>
+          <td><span class="time">30</span> мин</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="category-card">
+    <div class="category-card__image-block">
+      <div class="category-card__logo-wrapper">
+        <img src="img/logo-ilpatio-big.png" alt="" class="category-card__logo">
+      </div>
+      <div class="category-card__rating-row">
+        <div class="category-card__star-rating">
+          <svg xmlns="http://www.w3.org/2000/svg" width="119.219" height="19" viewBox="0 0 119.219 19">
+          <defs>
+            <linearGradient id="Gradient03">
+              <stop offset="0%" stop-color="#ffa115" />
+              <stop offset="80%" stop-color="#ffa115" />
+              <stop offset="80%" stop-color="#dadada" />
+              <stop offset="100%" stop-color="#dadada" />
+            </linearGradient>
+            <style>
+              .cls-11 {
+                /*fill: #ffa115;*/
+                fill-rule: evenodd;
+              }
+            </style>
+            </defs>
+            <path id="star_copy_4" data-name="star copy 4" class="cls-11" fill="url(#Gradient03)" d="M142.941,366.682a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.518-5.063a1.063,1.063,0,0,0-1.9,0l-2.52,5.065-5.631.812a1.055,1.055,0,0,0-.855.717,1.04,1.04,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.054,1.054,0,0,0,.421,1.028,1.082,1.082,0,0,0,1.118.081l5.036-2.629,5.037,2.629a1.065,1.065,0,0,0,.492.121h0a1.067,1.067,0,0,0,.624-0.2,1.055,1.055,0,0,0,.422-1.029L138.6,371.7l4.075-3.942A1.042,1.042,0,0,0,142.941,366.682Zm-24.568,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.519-5.063a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.269,1.079L102.8,371.7l-0.962,5.567a1.054,1.054,0,0,0,.421,1.028,1.08,1.08,0,0,0,1.117.081l5.037-2.629,5.036,2.629a1.072,1.072,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23l-0.962-5.567,4.075-3.942A1.043,1.043,0,0,0,118.373,366.682Zm-24.569,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812L84.8,360.09a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081l5.037-2.629,5.037,2.629a1.069,1.069,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23L89.461,371.7l4.075-3.942A1.042,1.042,0,0,0,93.8,366.682Zm-24.568,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812L60.23,360.09a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942L52.7,377.27a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081l5.037-2.629,5.036,2.629a1.069,1.069,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23L64.892,371.7l4.075-3.942A1.042,1.042,0,0,0,69.236,366.682Zm-25.478,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.519-5.063a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081L33.8,375.75l5.037,2.629a1.069,1.069,0,0,0,.492.121h0a1.056,1.056,0,0,0,1.045-1.23L39.414,371.7l4.075-3.942A1.042,1.042,0,0,0,43.758,366.682Z" transform="translate(-23.781 -359.5)"/>
+          </svg>
+        </div>
+        <div class="category-card__reviews">(201)</div>
+      </div>
+    </div>
+    <div class="category-card__info-block">
+      <div class="category-card__title">IL ПАТИО</div>
+      <div class="category-card__type">Американская / Бургеры</div>
+      <div class="category-card__row">
+        <div class="category-card__distance">1,54 км</div>
+        <div class="category-card__visa">
+          <img src="img/visa.png" alt="">
+        </div>
+        <div class="category-card__mastercard">
+          <img src="img/mastercard.png" alt="">
+        </div>
+      </div>
+      <table class="category-card__info-table">
+        <tr>
+          <th>Заказ от:</th>
+          <th>Доставка:</th>
+          <th>Время:</th>
+        </tr>
+        <tr>
+          <td><span class="price">1</span> Р</td>
+          <td><span class="delivery-price">100</span> Р</td>
+          <td><span class="time">1,5</span> час</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="category-card">
+    <div class="category-card__preorder">Ресторан еще не работает, возможен предварительный заказ</div>
+    <div class="category-card__image-block">
+      <div class="category-card__logo-wrapper">
+        <img src="img/logo-sh-house.png" alt="" class="category-card__logo">
+        <div class="category-card__opening-soon">До открытия 13 ч. 27 мин.</div>
+      </div>
+      <div class="category-card__rating-row">
+        <div class="category-card__star-rating">
+          <svg xmlns="http://www.w3.org/2000/svg" width="119.219" height="19" viewBox="0 0 119.219 19">
+          <defs>
+            <linearGradient id="Gradient04">
+              <stop offset="0%" stop-color="#ffa115" />
+              <stop offset="71%" stop-color="#ffa115" />
+              <stop offset="71%" stop-color="#dadada" />
+              <stop offset="100%" stop-color="#dadada" />
+            </linearGradient>
+            <style>
+              .cls-11 {
+                /*fill: #ffa115;*/
+                fill-rule: evenodd;
+              }
+            </style>
+            </defs>
+            <path id="star_copy_4" data-name="star copy 4" class="cls-11" fill="url(#Gradient04)" d="M142.941,366.682a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.518-5.063a1.063,1.063,0,0,0-1.9,0l-2.52,5.065-5.631.812a1.055,1.055,0,0,0-.855.717,1.04,1.04,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.054,1.054,0,0,0,.421,1.028,1.082,1.082,0,0,0,1.118.081l5.036-2.629,5.037,2.629a1.065,1.065,0,0,0,.492.121h0a1.067,1.067,0,0,0,.624-0.2,1.055,1.055,0,0,0,.422-1.029L138.6,371.7l4.075-3.942A1.042,1.042,0,0,0,142.941,366.682Zm-24.568,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.519-5.063a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.269,1.079L102.8,371.7l-0.962,5.567a1.054,1.054,0,0,0,.421,1.028,1.08,1.08,0,0,0,1.117.081l5.037-2.629,5.036,2.629a1.072,1.072,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23l-0.962-5.567,4.075-3.942A1.043,1.043,0,0,0,118.373,366.682Zm-24.569,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812L84.8,360.09a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081l5.037-2.629,5.037,2.629a1.069,1.069,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23L89.461,371.7l4.075-3.942A1.042,1.042,0,0,0,93.8,366.682Zm-24.568,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812L60.23,360.09a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942L52.7,377.27a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081l5.037-2.629,5.036,2.629a1.069,1.069,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23L64.892,371.7l4.075-3.942A1.042,1.042,0,0,0,69.236,366.682Zm-25.478,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.519-5.063a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081L33.8,375.75l5.037,2.629a1.069,1.069,0,0,0,.492.121h0a1.056,1.056,0,0,0,1.045-1.23L39.414,371.7l4.075-3.942A1.042,1.042,0,0,0,43.758,366.682Z" transform="translate(-23.781 -359.5)"/>
+          </svg>
+        </div>
+        <div class="category-card__reviews">(23)</div>
+      </div>
+    </div>
+    <div class="category-card__info-block">
+      <div class="category-card__title">Шашлычный домик</div>
+      <div class="category-card__type">Американская / Итальянская</div>
+      <div class="category-card__row">
+        <div class="category-card__distance">0,9 км</div>
+      </div>
+      <table class="category-card__info-table">
+        <tr>
+          <th>Заказ от:</th>
+          <th>Доставка:</th>
+          <th>Время:</th>
+        </tr>
+        <tr>
+          <td><span class="price">1900</span> Р</td>
+          <td><span class="delivery-price">200</span> Р</td>
+          <td><span class="time">30</span> мин</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="category-card">
+    <div class="category-card__image-block">
+      <div class="category-card__logo-wrapper">
+        <img src="img/logo-bagrationi.png" alt="" class="category-card__logo">
+      </div>
+      <div class="category-card__rating-row">
+        <div class="category-card__star-rating">
+          <svg xmlns="http://www.w3.org/2000/svg" width="119.219" height="19" viewBox="0 0 119.219 19">
+          <defs>
+            <linearGradient id="Gradient05">
+              <stop offset="0%" stop-color="#ffa115" />
+              <stop offset="100%" stop-color="#ffa115" />
+            </linearGradient>
+            <style>
+              .cls-11 {
+                /*fill: #ffa115;*/
+                fill-rule: evenodd;
+              }
+            </style>
+            </defs>
+            <path id="star_copy_4" data-name="star copy 4" class="cls-11" fill="url(#Gradient05)" d="M142.941,366.682a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.518-5.063a1.063,1.063,0,0,0-1.9,0l-2.52,5.065-5.631.812a1.055,1.055,0,0,0-.855.717,1.04,1.04,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.054,1.054,0,0,0,.421,1.028,1.082,1.082,0,0,0,1.118.081l5.036-2.629,5.037,2.629a1.065,1.065,0,0,0,.492.121h0a1.067,1.067,0,0,0,.624-0.2,1.055,1.055,0,0,0,.422-1.029L138.6,371.7l4.075-3.942A1.042,1.042,0,0,0,142.941,366.682Zm-24.568,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.519-5.063a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.269,1.079L102.8,371.7l-0.962,5.567a1.054,1.054,0,0,0,.421,1.028,1.08,1.08,0,0,0,1.117.081l5.037-2.629,5.036,2.629a1.072,1.072,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23l-0.962-5.567,4.075-3.942A1.043,1.043,0,0,0,118.373,366.682Zm-24.569,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812L84.8,360.09a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081l5.037-2.629,5.037,2.629a1.069,1.069,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23L89.461,371.7l4.075-3.942A1.042,1.042,0,0,0,93.8,366.682Zm-24.568,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812L60.23,360.09a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942L52.7,377.27a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081l5.037-2.629,5.036,2.629a1.069,1.069,0,0,0,.493.121h0a1.056,1.056,0,0,0,1.045-1.23L64.892,371.7l4.075-3.942A1.042,1.042,0,0,0,69.236,366.682Zm-25.478,0a1.055,1.055,0,0,0-.856-0.717l-5.631-.812-2.519-5.063a1.063,1.063,0,0,0-1.9,0l-2.519,5.065-5.631.812a1.055,1.055,0,0,0-.856.717,1.042,1.042,0,0,0,.268,1.079l4.075,3.942-0.962,5.567a1.053,1.053,0,0,0,.421,1.028,1.081,1.081,0,0,0,1.117.081L33.8,375.75l5.037,2.629a1.069,1.069,0,0,0,.492.121h0a1.056,1.056,0,0,0,1.045-1.23L39.414,371.7l4.075-3.942A1.042,1.042,0,0,0,43.758,366.682Z" transform="translate(-23.781 -359.5)"/>
+          </svg>
+        </div>
+        <div class="category-card__reviews">(199)</div>
+      </div>
+    </div>
+    <div class="category-card__info-block">
+      <div class="category-card__title">Багратиони</div>
+      <div class="category-card__type">Американская / Бургеры</div>
+      <div class="category-card__row">
+        <div class="category-card__distance">1,54 км</div>
+      </div>
+      <table class="category-card__info-table">
+        <tr>
+          <th>Заказ от:</th>
+          <th>Доставка:</th>
+          <th>Время:</th>
+        </tr>
+        <tr>
+          <td><span class="price">900</span> Р</td>
+          <td><span class="delivery-price">0</span> Р</td>
+          <td><span class="time">1,5</span> час</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="show-more">
+  <a href="#" class="btn btn--gray btn--show-more">показать еще заведения</a>
+</div>
+<section class="section mobile category">
+  <h2 class="section__title">Заказывать через<br>приложение еще проще!</h2>
+  <a href="#" class="mobile__btn">
+    <img src="img/btn-ios.png" alt="">
+  </a>
+  <a href="#" class="mobile__btn">
+    <img src="img/btn-android.png" alt="">
+  </a>
+</section>
+<section class="section about-us">
+  <div class="container">
+    <h2 class="about-us__title">ZakaZaka: доставка любимой еды на дом!</h2>
+    <p class="about-us__text">Любые блюда из лучших ресторанов города - прямо у вас дома, если вы заказываете еду с ZakaZaka! Это так удобно ипросто, всего три простых шага: подбираете подходящий по ассортименту и ценам ресторан; делаете заказ еды по меню этого заведения; получаете оперативную доставку в сроки, указанные на сайте для каждого конкретного ресторана. Мы сотрудничаем со многими заведениями города, потому вы сможете найти оптимальный вариант непосредственно в вашем районе, чтобы доставка заняла минимум времени. Наши курьеры привезут горячие блюда - горячими, холодные - охлажденными, а напитки - оптимальной температуры. В результате вы получите все необходимое для того, чтобы устроить люксовый ужин, не выходя из дома или офиса.</p>
+    <a href="#" class="about-us__show-more">Далее</a>
+  </div>
+</section>
+
+<div class="color-overlay"></div>
+<div class="modal modal--sort opened">
+  <div class="modal-close">
+    <img src="img/ico/ico-close.svg" alt="" class="modal-close__image">
+  </div>
+  <div class="modal__block-title">Сортировать по:</div>
+  <div class="tab-controls tab-controls--narrow tab-controls--blue">
+    <button type="button" class="tab-control tab-control--narrow tab-control--blue active" data-tab="js-tab-1">Расстоянию</button>
+    <button type="button" class="tab-control tab-control--narrow tab-control--blue" data-tab="js-tab-2">Рейтингу</button>
+    <button type="button" class="tab-control tab-control--narrow tab-control--blue" data-tab="js-tab-3">Алфавиту</button>
+  </div>
+  <!-- <div class="js-tabs">
+    <div class="js-tab active" id="js-tab-1"></div>
+    <div class="js-tab" id="js-tab-2">
+    <div class="js-tab" id="js-tab-3">
+  </div> -->
+  <div class="modal__filters-block">
+    <h4 class="modal__block-title">Показать только</h4>
+    <input type="checkbox" id="actions">
+    <label for="actions" class="modal__checkbox-label">С акциями</label>
+    <input type="checkbox" id="free-delivery" checked>
+    <label for="free-delivery" class="modal__checkbox-label">Бесплатная доставка</label>
+    <input type="checkbox" id="card-online">
+    <label for="card-online" class="modal__checkbox-label">Оплата картой онлайн</label>
+    <input type="checkbox" id="card-courier">
+    <label for="card-courier" class="modal__checkbox-label">Оплата картой курьеру</label>
+    <input type="checkbox" id="points">
+    <label for="points" class="modal__checkbox-label">Еда за баллы</label>
+    <input type="checkbox" id="opened-now">
+    <label for="opened-now" class="modal__checkbox-label">Работает сейчас</label>
+    <input type="checkbox" id="opened-24">
+    <label for="opened-24" class="modal__checkbox-label">Работает круглосуточно</label>
+  </div>
+
+  <div class="modal__filters-block">
+    <h4 class="modal__block-title">Кухня</h4>
+    <input type="checkbox" id="soushi">
+    <label for="soushi" class="modal__checkbox-label">Суши</label>
+    <input type="checkbox" id="pizza">
+    <label for="pizza" class="modal__checkbox-label">Пицца</label>
+    <input type="checkbox" id="kebab">
+    <label for="kebab" class="modal__checkbox-label">Шашлыки</label>
+    <input type="checkbox" id="pies">
+    <label for="pies" class="modal__checkbox-label">Пироги</label>
+    <input type="checkbox" id="burgers">
+    <label for="burgers" class="modal__checkbox-label">Бургеры</label>
+  </div>
+
+  <div class="modal__filters-block">
+    <h4 class="modal__block-title">Другая кухня</h4>
+    <input type="checkbox" id="american">
+    <label for="american" class="modal__checkbox-label">Американская</label>
+    <input type="checkbox" id="european">
+    <label for="european" class="modal__checkbox-label">Европейская</label>
+    <input type="checkbox" id="italian">
+    <label for="italian" class="modal__checkbox-label">Итальянская</label>
+    <input type="checkbox" id="caucasian">
+    <label for="caucasian" class="modal__checkbox-label">Кавказская</label>
+    <input type="checkbox" id="chinese">
+    <label for="chinese" class="modal__checkbox-label">Китайская</label>
+    <input type="checkbox" id="mexican">
+    <label for="mexican" class="modal__checkbox-label">Мексиканская</label>
+    <input type="checkbox" id="russian">
+    <label for="russian" class="modal__checkbox-label">Русская</label>
+    <input type="checkbox" id="uzbek">
+    <label for="uzbek" class="modal__checkbox-label">Узбекская</label>
+    <input type="checkbox" id="exotic">
+    <label for="exotic" class="modal__checkbox-label">Экзотическая</label>
+    <input type="checkbox" id="japanese">
+    <label for="japanese" class="modal__checkbox-label">Японская</label>
+  </div>
+</div>
+
+@@include('htmltpl/footer.html')
+
+
+
+
+
+
+
+
+

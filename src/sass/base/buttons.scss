@@ -58,6 +58,13 @@
     background-color: #e5e5e5;
   }
 
+  &--white {
+    padding: 20px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 3px;
+  }
+
   &--show-more {
     width: 100%;
     line-height: 30px;
