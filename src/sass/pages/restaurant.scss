@@ -377,3 +377,82 @@
   height: 75px;
   width: auto;
 }
+
+.review-block {
+  padding-bottom: 30px;
+  border-bottom: 1px solid $bb;
+}
+
+.user-review {
+  padding: 30px 5%;
+  border-bottom: 1px solid $bb;
+
+  &__info-row {
+    font-size: 0;
+  }
+
+  &__avatar {
+    display: inline-block;
+    vertical-align: top;
+    width: 18%;
+    border-radius: 50%;
+  }
+
+  &__info {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding-left: 25px;
+    width: 58%;
+  }
+
+  &__star-rating {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+    min-height: 75px;
+
+    svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &__answer {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+    min-height: 75px;
+
+    svg {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      right: 0;
+    }
+  }
+
+  &__answer-icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+    color: #333;
+  }
+
+  &__date {
+    font-size: 24px;
+    line-height: 36px;
+    color: #959595;
+  }
+}
