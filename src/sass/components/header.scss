@@ -47,4 +47,11 @@
 .cart{
   margin-top: 5px;
   display: block;
+  float: right;
+  width: 49px;
+  height: 40px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 -280px;
+  background-size: 220px 330px;
 }

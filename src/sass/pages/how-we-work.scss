@@ -113,11 +113,12 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 56px;
-      height: 56px;
-      background-image: url("../img/ico/ico-check.svg");
+      width: 65px;
+      height: 65px;
+      background-image: url("../img/sprite.png");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 220px 330px;
+      background-position: 0 0;
     }
   }
 

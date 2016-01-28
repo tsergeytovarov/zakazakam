@@ -11,12 +11,14 @@
     &:before {
       content: "";
       position: absolute;
-      top: 26px;
+      top: 24px;
       left: 28px;
       width: 28px;
       height: 36px;
-      background-image: url("../img/ico/ico-pin.svg");
-      background-size: contain;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-size: 220px 330px;
+      background-position: -55px -181px;
     }
   }
 
@@ -67,9 +69,10 @@
       margin-left: -11px;
       width: 21px;
       height: 14px;
-      background-image: url("../img/ico/ico-arr-down.svg");
+      background-image: url("../img/sprite.png");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 220px 330px;
+      background-position: -84px -282px;
       z-index: 0;
     }
   }
@@ -107,9 +110,10 @@
       margin-left: -190px;
       width: 33px;
       height: 33px;
-      background-image: url("../img/ico/ico-filter.svg");
+      background-image: url("../img/sprite.png");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 220px 330px;
+      background-position: -188px 0;
     }
   }
 }
@@ -142,13 +146,14 @@
     &:before {
       content: "";
       position: absolute;
-      top: 16px;
-      right: 24px;
+      top: 17px;
+      right: 22px;
       width: 14px;
       height: 18px;
-      background-image: url("../img/ico/ico-flag-blue.svg");
+      background-image: url("../img/sprite.png");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 220px 330px;
+      background-position: -175px -174px;
     }
   }
 
@@ -278,9 +283,10 @@
       left: 0;
       width: 17px;
       height: 22px;
-      background-image: url("../img/ico/ico-pin.svg");
+      background-image: url("../img/sprite.png");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 220px 330px;
+      background-position: -93px -180px;
     }
   }
 

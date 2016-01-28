@@ -11,21 +11,37 @@
     top: 50%;
     display: block;
     margin-top: -12px;
+    width: 14px;
+    height: 26px;
     text-decoration: none;
 
-    img {
-      display: block;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 14px;
-      height: 24px;
+      height: 26px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-size: 220px 330px;
     }
   }
 
   &__prev {
     left: 5%;
+
+    &:before {
+      background-position: -76px -300px;
+    }
   }
 
   &__next {
     right: 5%;
+
+    &:before {
+      background-position: -101px -300px;
+    }
   }
 
   &__title {

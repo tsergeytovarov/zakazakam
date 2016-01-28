@@ -18,26 +18,22 @@
     opacity: .7;
   }
 
-  &__list {
+  ol {
     margin: 0;
     padding-left: 50px;
     color: #4f555d;
   }
 
-  &__text {
-    margin: 0;
-    margin-bottom: 45px;
-    font-size: 27px;
-    line-height: 42px;
-    color: #4f555d;
-  }
-
-  &__description {
+  p {
     margin: 0;
     margin-bottom: 45px;
     font-size: 27px;
     line-height: 42px;
     color: #4f555d;
     opacity: .7;
+
+    &:first-child {
+      opacity: 1;
+    }
   }
 }

@@ -1,110 +1,50 @@
 @@include('htmltpl/head.html')
 
-<div class="user-block">
-  <img class="user-block__image" src="img/user.jpg" width="128" height="128" alt="">
-  <p class="user-block__name">Константин Константинопольский</p>
-  <p class="user-block__balls"><span>4800</span> баллов</p>
-</div>
-<nav class="user-navigation">
-  <ul class="user-navigation__list">
-    <li class="user-navigation__list-item">
-      <a href="cabinet.html" class="user-navigation__link">
-        <!-- <img src="img/ico/ico-user.png" alt="" class="user-navigation__icon"> -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="47.938" height="48" viewBox="0 0 47.938 48">
-          <defs>
-            <style>
-              .cls-1 {
-                fill: #669cd6;
-                fill-rule: evenodd;
-              }
-            </style>
-          </defs>
-          <path id="user" class="cls-1" d="M85.981,374.956c0-.106.072,4.079,0.072,4.079l1.474,0.785a25.991,25.991,0,0,0,6.913,2.221c2.236,0.386,4.762,1.158,6.46,5.444-0.1.1-2.605,2.518-20.889,2.518s-20.791-2.416-20.874-2.514c1.683-4.292,4.208-5.063,6.445-5.449a26.29,26.29,0,0,0,6.89-2.207l1.471-.773s0.1-4.183.094-4.08c3.348,0,11.807-.024,11.945-0.024m3.031-3.006-18,.026S71.04,376.7,71,377.2a23.047,23.047,0,0,1-5.96,1.892c-2.954.51-6.624,1.8-8.792,7.335a2.916,2.916,0,0,0,.36,2.8C58.831,392.345,70.562,393,80.01,393s21.18-.655,23.405-3.776a2.918,2.918,0,0,0,.361-2.8c-2.169-5.533-5.838-6.827-8.794-7.337a22.849,22.849,0,0,1-5.966-1.9c0-4.338-.1-3.654,0-5.244h0ZM80.023,348c6.993,0,10.5,6.044,10.5,13.5,0,6.1-4.7,13.5-10.5,13.5s-10.5-7.374-10.5-13.5C69.522,354.044,73.035,348,80.023,348Zm0-3C89,345,93.51,352.388,93.51,361.5c0,7.45-6.038,16.5-13.487,16.5s-13.487-9.013-13.487-16.5C66.537,352.388,71.048,345,80.023,345Zm0,3c6.993,0,10.5,6.044,10.5,13.5,0,6.1-4.7,13.5-10.5,13.5s-10.5-7.374-10.5-13.5C69.522,354.044,73.035,348,80.023,348Z" transform="translate(-56.031 -345)"/>
-        </svg>
-      </a>
-    </li>
-    <li class="user-navigation__list-item">
-      <a href="cabinet-settings.html" class="user-navigation__link">
-        <!-- <img src="img/ico/ico-gear.png" alt="" class="user-navigation__icon"> -->
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
-          <defs>
-            <style>
-              .cls-2 {
-                fill: #262626;
-                fill-rule: evenodd;
-                filter: url(#filter);
-              }
-            </style>
-            <filter id="filter" x="219" y="345" width="48" height="48" filterUnits="userSpaceOnUse">
-              <feFlood result="flood" flood-color="#669cd6"/>
-              <feComposite result="composite" operator="in" in2="SourceGraphic"/>
-              <feBlend result="blend" in2="SourceGraphic"/>
-            </filter>
-          </defs>
-          <path id="setting" class="cls-2" d="M243,361.5a7.5,7.5,0,1,1-7.5,7.5A7.5,7.5,0,0,1,243,361.5Zm0,3a4.5,4.5,0,1,1-4.5,4.5A4.5,4.5,0,0,1,243,364.5Zm1.313-16.5a2.625,2.625,0,0,1,2.625,2.625l0.642,1.953a16.865,16.865,0,0,1,3.806,1.573l1.826-.928a3.364,3.364,0,0,1,2.045-1.026,2.526,2.526,0,0,1,1.667,1.026l1.857,1.857a2.628,2.628,0,0,1,0,3.715l-0.925,1.828a16.947,16.947,0,0,1,1.572,3.805l1.952,0.639a2.625,2.625,0,0,1,2.625,2.625v2.626a2.624,2.624,0,0,1-2.625,2.625l-1.953.642a16.938,16.938,0,0,1-1.573,3.806l0.927,1.827a2.626,2.626,0,0,1,0,3.713l-1.857,1.856a2.624,2.624,0,0,1-3.712,0l-1.83-.926a16.86,16.86,0,0,1-3.787,1.567l-0.657,1.959a2.624,2.624,0,0,1-2.625,2.623h-2.626a2.624,2.624,0,0,1-2.625-2.623l-0.657-1.959a16.893,16.893,0,0,1-3.774-1.558l-1.842.917a2.625,2.625,0,0,1-3.713,0l-1.857-1.856a2.626,2.626,0,0,1,0-3.713l0.917-1.844a17.018,17.018,0,0,1-1.559-3.774l-1.956-.657A2.625,2.625,0,0,1,222,370.313v-2.626a2.626,2.626,0,0,1,2.626-2.625l1.956-.657a16.924,16.924,0,0,1,1.559-3.774l-0.917-1.841a2.628,2.628,0,0,1,0-3.715l1.857-1.857a2.618,2.618,0,0,1,1.856-.768,2.042,2.042,0,0,1,1.7.522L234.5,353.9a17.168,17.168,0,0,1,3.853-1.589l0.709-1.695A2.625,2.625,0,0,1,241.687,348h2.626m0.02-3h-2.666a5.34,5.34,0,0,0-5.311,4.839l-0.114.35q-0.9.322-1.761,0.726l-0.341-.169a5.334,5.334,0,0,0-7.166.339l-1.887,1.887a5.335,5.335,0,0,0-.34,7.17l0.168,0.339c-0.268.569-.509,1.155-0.724,1.753l-0.364.123a5.341,5.341,0,0,0-4.827,5.31v2.666a5.341,5.341,0,0,0,4.827,5.31l0.365,0.123c0.214,0.6.456,1.185,0.723,1.753l-0.169.342a5.334,5.334,0,0,0,.341,7.168l1.886,1.885a5.332,5.332,0,0,0,7.168.341l0.34-.169c0.57,0.268,1.156.509,1.753,0.723l0.123,0.367a5.341,5.341,0,0,0,5.31,4.824h2.666a5.341,5.341,0,0,0,5.31-4.824l0.123-.367q0.9-.323,1.757-0.726l0.329,0.166a5.331,5.331,0,0,0,7.175-.335l1.886-1.885a5.336,5.336,0,0,0,.333-7.179l-0.165-.324q0.406-.861.729-1.767l0.353-.116a5.339,5.339,0,0,0,4.837-5.31v-2.666a5.342,5.342,0,0,0-4.839-5.311l-0.351-.115q-0.322-.9-0.728-1.766l0.165-.325a5.338,5.338,0,0,0-.334-7.179l-1.886-1.884a5.335,5.335,0,0,0-7.177-.334l-0.324.165q-0.861-.4-1.767-0.728l-0.116-.354a5.339,5.339,0,0,0-5.31-4.836h0Z" transform="translate(-219 -345)"/>
-        </svg>
-      </a>
-    </li>
-    <li class="user-navigation__list-item current">
-      <a href="cabinet-address.html" class="user-navigation__link">
-        <!-- <img src="img/ico/ico-address--current.png" alt="" class="user-navigation__icon"> -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="48" viewBox="0 0 36 48">
-          <defs>
-            <style>
-              .cls-3 {
-                fill: #262626;
-                fill-rule: evenodd;
-              }
-            </style>
-          </defs>
-          <path id="mark" class="cls-3" d="M400,393s18-18.346,18-30a18,18,0,0,0-36,0C382,374.867,400,393,400,393Zm0-4.5s15-15.5,15-25.313a15,15,0,1,0-30,0C385,373.1,400,388.5,400,388.5Zm0-31.5a6,6,0,1,1-6,6A6,6,0,0,1,400,357Zm0,3a3,3,0,1,1-3,3A3,3,0,0,1,400,360Z" transform="translate(-382 -345)"/>
-        </svg>
-      </a>
-    </li>
-    <li class="user-navigation__list-item">
-      <a href="cabinet-history.html" class="user-navigation__link">
-        <!-- <img src="img/ico/ico-history.png" alt="" class="user-navigation__icon"> -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="48" viewBox="0 0 39 48">
-          <defs>
-            <style>
-              .cls-1 {
-                fill: #669cd6;
-                fill-rule: evenodd;
-              }
-            </style>
-          </defs>
-          <path id="clipboard" class="cls-1" d="M567.5,381h-18a1.5,1.5,0,0,0,0,3h18A1.5,1.5,0,0,0,567.5,381Zm6-28.5h-3a3,3,0,0,0-3-3H566V348a3,3,0,0,0-3-3h-9a3,3,0,0,0-3,3v1.5h-1.5a3,3,0,0,0-3,3h-3A4.5,4.5,0,0,0,539,357v31.5a4.5,4.5,0,0,0,4.5,4.5h30a4.5,4.5,0,0,0,4.5-4.5V357A4.5,4.5,0,0,0,573.5,352.5Zm-21.75,0H554V351a3,3,0,0,1,3-3h3a3,3,0,0,1,3,3v1.5h2.25a2.25,2.25,0,0,1,0,4.5h-13.5A2.25,2.25,0,0,1,551.75,352.5ZM575,387a3,3,0,0,1-3,3H545a3,3,0,0,1-3-3V358.5a3,3,0,0,1,3-3h1.5V357a3,3,0,0,0,3,3h18c1.823,0,2.471-1.561,2.935-3.044a4.5,4.5,0,0,0,.065-1.456H572a3,3,0,0,1,3,3V387Zm-7.5-13.5h-18a1.5,1.5,0,0,0,0,3h18A1.5,1.5,0,0,0,567.5,373.5Zm0-7.5h-18a1.5,1.5,0,0,0,0,3h18A1.5,1.5,0,0,0,567.5,366Z" transform="translate(-539 -345)"/>
-        </svg>
-      </a>
-    </li>
-  </ul>
-</nav>
-<section class="user-address">
-  <div class="container">
-    <h2 class="user-address__title">Мои адреса: <span>Санкт-Петербург</span></h2>
-    <div class="address">
-      <div class="address__type">Домашний адрес</div>
-      <div class="address__text">Санкт-Петербург, Энгельса, 154</div>
-      <div class="address__close">
-        <img src="img/ico/ico-close.svg" alt="" class="address__close-icon">
+  <div class="user-block">
+    <img class="user-block__image" src="img/user.jpg" width="128" height="128" alt="">
+    <p class="user-block__name">Константин Константинопольский</p>
+    <p class="user-block__balls"><span>4800</span> баллов</p>
+  </div>
+  <nav class="user-navigation">
+    <ul class="user-navigation__list">
+      <li class="user-navigation__list-item">
+        <a href="cabinet.html" class="user-navigation__link user-navigation__link--user"></a>
+      </li>
+      <li class="user-navigation__list-item">
+        <a href="cabinet-settings.html" class="user-navigation__link user-navigation__link--gear"></a>
+      </li>
+      <li class="user-navigation__list-item current">
+        <a href="cabinet-address.html" class="user-navigation__link user-navigation__link--pin user-navigation__link--current"></a>
+      </li>
+      <li class="user-navigation__list-item">
+        <a href="cabinet-history.html" class="user-navigation__link user-navigation__link--list"></a>
+      </li>
+    </ul>
+  </nav>
+  <section class="user-address">
+    <div class="container">
+      <h2 class="user-address__title">Мои адреса: <span>Санкт-Петербург</span></h2>
+      <div class="address">
+        <div class="address__type">Домашний адрес</div>
+        <div class="address__text">Санкт-Петербург, Энгельса, 154</div>
+        <div class="address__close"></div>
+      </div>
+      <div class="new-address-form">
+        <form action="#" method="post">
+          <h3 class="new-address-form__title">Добавить новый</h3>
+          <input type="text" id="address-type" placeholder="Название">
+          <input type="text" id="current-city" value="Санкт-Петербург">
+          <input type="text" id="street" placeholder="Улица">
+          <div class="new-address-form__fields-wrapper">
+            <input type="text" id="house" placeholder="Дом">
+            <input type="text" id="building" placeholder="Корпус">
+            <input type="text" id="apartment" placeholder="Квартира">
+          </div>
+          <textarea name="comment" id="comment" rows="3" placeholder="Комментарий"></textarea>
+          <button type="submit" class="btn btn--green">Добавить адрес</button>
+        </form>
       </div>
     </div>
-    <div class="new-address-form">
-      <form action="#" method="post">
-        <h3 class="new-address-form__title">Добавить новый</h3>
-        <input type="text" id="address-type" placeholder="Название">
-        <input type="text" id="current-city" value="Санкт-Петербург">
-        <input type="text" id="street" placeholder="Улица">
-        <div class="new-address-form__fields-wrapper">
-          <input type="text" id="house" placeholder="Дом">
-          <input type="text" id="building" placeholder="Корпус">
-          <input type="text" id="apartment" placeholder="Квартира">
-        </div>
-        <textarea name="comment" id="comment" rows="3" placeholder="Комментарий"></textarea>
-        <button type="submit" class="btn btn--green">Добавить адрес</button>
-      </form>
-    </div>
-  </div>
-</section>
+  </section>
 
 @@include('htmltpl/footer.html')

@@ -93,9 +93,10 @@
       left: 0;
       width: 17px;
       height: 22px;
-      background-image: url("../img/ico/ico-pin.svg");
+      background-image: url("../img/sprite.png");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 220px 330px;
+      background-position: -93px -180px;
       opacity: .7;
     }
   }
@@ -230,9 +231,10 @@
       margin-top: -14px;
       width: 15px;
       height: 28px;
-      background-image: url("../img/ico/ico-arr-right.svg");
+      background-image: url("../img/sprite.png");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 220px 330px;
+      background-position: -59px -283px;
     }
 
     .flag-green {
@@ -288,7 +290,7 @@
           margin-top: -8px;
           width: 28px;
           height: 15px;
-          background-image: url("../img/ico/ico-arr-open.svg");
+          background-position: -111px -283px;
         }
       }
     }
@@ -301,7 +303,10 @@
           margin-top: -8px;
           width: 28px;
           height: 15px;
-          background-image: url("../img/ico/ico-arr-close.svg");
+          background-image: url("../img/sprite.png");
+          background-repeat: no-repeat;
+          background-size: 220px 330px;
+          background-position: -163px -310px;
         }
       }
     }
@@ -428,19 +433,18 @@
     width: 24%;
     min-height: 75px;
 
-    svg {
+    &:before {
+      content: "";
       position: absolute;
-      bottom: 0;
-      left: 50%;
-      right: 0;
+      top: 20px;
+      left: 40%;
+      width: 39px;
+      height: 40px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-size: 220px 330px;
+      background-position: -63px -133px;
     }
-  }
-
-  &__answer-icon {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    right: 0;
   }
 
   &__name {

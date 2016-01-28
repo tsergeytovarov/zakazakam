@@ -91,20 +91,36 @@
     font-weight: 400;
   }
 
+  &__field-wrapper {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 22px;
+      height: 15px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-size: 220px 330px;
+      background-position: -142px -283px;
+    }
+  }
+
   &__field{
+    position: relative;
     font-size: 28px;
     line-height: 40px;
     color: #fefefe;
     height: 50px;
     background-color: transparent;
-    background-image: url("../img/ico/ico-arrow-bottom.svg");
-    background-repeat: no-repeat;
-    background-position: top right;
     border: 0;
     padding: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    z-index: 1;
   }
 
   input::-webkit-input-placeholder{

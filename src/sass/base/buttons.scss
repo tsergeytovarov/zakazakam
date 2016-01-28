@@ -54,8 +54,22 @@
   }
 
   &--gray {
+    position: relative;
     color: rgba(0,0,0,.4);
     background-color: #e5e5e5;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 28px;
+      left: 28px;
+      width: 24px;
+      height: 18px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-size: 220px 330px;
+      background-position: -195px -285px;
+    }
   }
 
   &--white {
@@ -68,5 +82,35 @@
   &--show-more {
     width: 100%;
     line-height: 30px;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &--round {
+    position: relative;
+    margin-top: 15px;
+    padding: 30px 0;
+    padding-right: 50px;
+    width: 90%;
+    font-size: 24px;
+    line-height: 30px;
+    background-color: $orange;
+    border-radius: 45px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      margin-left: 160px;
+      width: 26px;
+      height: 21px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-size: 220px 330px;
+      background-position: -126px -302px;
+    }
   }
 }

@@ -121,3 +121,26 @@
     }
   }
 }
+
+.phone-number {
+  position: relative;
+  margin-top: 120px;
+  padding-left: 65px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  color: #5d5d5d;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 44px;
+    background-image: url("../img/sprite.png");
+    background-position: -62px -84px;
+    background-repeat: no-repeat;
+    background-size: 220px 330px;
+  }
+}

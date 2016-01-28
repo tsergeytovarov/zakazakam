@@ -15,9 +15,20 @@
   position: absolute;
   top: 34px;
   right: 5%;
+  width: 26px;
+  height: 27px;
 
-  &__image {
-    display: block;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 27px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-size: 220px 330px;
+    background-position: -166px -39px;
   }
 }
 

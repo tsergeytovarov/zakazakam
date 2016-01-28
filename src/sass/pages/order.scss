@@ -172,9 +172,17 @@
         background-color: $green;
         border-radius: 50%;
 
-        img {
-          display: inline-block;
-          vertical-align: middle;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 12px;
+          left: 11px;
+          width: 19px;
+          height: 15px;
+          background-image: url("../img/sprite.png");
+          background-repeat: no-repeat;
+          background-size: 220px 330px;
+          background-position: -174px -150px;
         }
       }
     }

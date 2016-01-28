@@ -16,12 +16,16 @@
   right: 0;
   display: none;
   box-sizing: border-box;
-  padding: 0 5%;
   padding-top: 45px;
   width: 100%;
   min-height: 100vh;
   background-color: #fff;
   z-index: 3;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 
   &.opened {
     display: block;
@@ -31,6 +35,21 @@
     position: absolute;
     top: 55px;
     right: 65px;
+    width: 26px;
+    height: 27px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 26px;
+      height: 27px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-size: 220px 330px;
+      background-position: -166px -39px;
+    }
   }
 
   &__title {
@@ -70,6 +89,8 @@
   &__filters-block {
     padding-top: 50px;
     padding-bottom: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
     border-bottom: 1px solid $bb;
   }
 
@@ -98,11 +119,20 @@
 
     &:before {
       background-color: $green;
-      background-image: url("../img/ico/ico-check-white.svg");
-      background-repeat: no-repeat;
-      background-size: 20px;
-      background-position: top 11px left 8px;
       border: 2px solid $green;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 11px;
+      width: 20px;
+      height: 15px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-size: 220px 330px;
+      background-position: -174px -150px;
     }
   }
 
@@ -116,11 +146,6 @@
     width: 92%;
     height: calc(100% - 40px);
     min-height: auto;
-    overflow-y: scroll;
-
-    &::-webkit-scrollbar {
-      width: 0;
-    }
 
     .modal-close {
       top: 32px;
@@ -129,17 +154,16 @@
   }
 
   &--enter {
-    padding-bottom: 300px;
     text-align: center;
   }
 
   &--delivery {
-    left: 5%;
-    right: 5%;
-    top: 320px;
+    left: 50%;
+    top: 50%;
     bottom: auto;
     padding: 20px 30px;
-    width: auto;
+    width: 90%;
+    transform: translate(-50%, -50%);
     height: auto;
     min-height: 635px;
 
@@ -161,16 +185,17 @@
   }
 
   &--restaurant {
-    top: 350px;
+    top: 50%;
     bottom: auto;
-    left: 5%;
-    right: 5%;
+    left: 50%;
+    right: auto;
     padding: 70px 30px;
     min-height: 350px;
-    width: auto;
+    width: 90%;
     text-align: center;
     background-color: $orange;
     border-radius: 5px;
+    transform: translate(-50%, -50%);
 
     .modal-close {
       top: 30px;
@@ -188,13 +213,7 @@
   }
 
   &--sort {
-
     min-height: 100vh;
-    overflow-y: scroll;
-
-    &::-webkit-scrollbar {
-      width: 0;
-    }
 
     .modal-close {
       top: 33px;
@@ -204,6 +223,8 @@
 }
 
 .address-form {
+  padding: 0 5%;
+  padding-bottom: 230px;
 
   &__title {
     margin: 0;
@@ -223,6 +244,16 @@
     position: absolute;
     top: 29px;
     right: 23px;
+    display: block;
+    width: 31px;
+    height: 38px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-size: 220px 330px;
+    background-position: -54px -181px;
   }
 
   input[type="text"] {
@@ -260,10 +291,6 @@
 }
 
 .address-history {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 
   &__title {
     margin: 0;
@@ -294,12 +321,22 @@
       font-size: 32px;
       line-height: 40px;
     }
-  }
 
-  &__pin {
-    position: absolute;
-    top: 37px;
-    left: 5%;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 5%;
+      width: 31px;
+      height: 38px;
+      background-color: transparent;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-size: 220px 330px;
+      background-position: -54px -181px;
+      border: none;
+      outline: none;
+    }
   }
 }
 
@@ -336,6 +373,7 @@
 }
 
 .enter-form {
+  padding: 0 5%;
   text-align: left;
 
   &__title {
@@ -387,6 +425,7 @@
 .retreive-password {
   display: inline-block;
   vertical-align: top;
+  margin-bottom: 115px;
   font-size: 26px;
   line-height: 42px;
   color: #333;
@@ -394,10 +433,6 @@
 }
 
 .social-login {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 30px 5%;
   padding-bottom: 10px;
   max-height: 235px;
@@ -448,8 +483,9 @@
     content: "";
     position: absolute;
     left: 50%;
+    background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 220px 330px;
   }
 
   &--fb {
@@ -461,7 +497,7 @@
       margin-left: -58px;
       width: 12px;
       height: 24px;
-      background-image: url("../img/ico/ico-fb.svg");
+      background-position: -166px 0;
     }
   }
 
@@ -474,7 +510,7 @@
       margin-left: -69px;
       width: 32px;
       height: 20px;
-      background-image: url("../img/ico/ico-vk-white.svg");
+      background-position: -123px 0;
     }
   }
 
@@ -485,9 +521,9 @@
     &:before {
       top: 16px;
       margin-left: -67px;
-      width: 31px;
+      width: 32px;
       height: 29px;
-      background-image: url("../img/ico/ico-mailru.png");
+      background-position: -124px -29px;
     }
   }
 }
@@ -547,6 +583,8 @@
 }
 
 .registration-form {
+  padding: 0 5%;
+
   &__title {
     margin: 0;
     margin-bottom: 35px;
@@ -580,10 +618,19 @@
   }
 
   input[type="checkbox"]:checked + .registration-form__checkbox-label {
-    background-image: url("../img/ico/ico-check-gray.svg");
-    background-repeat: no-repeat;
-    background-size: 22px 16px;
-    background-position: left 5px top 12px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 7px;
+      width: 19px;
+      height: 14px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-size: 220px 330px;
+      background-position: -198px -177px;
+    }
   }
 
   &__link {
@@ -610,7 +657,7 @@
 
   .btn--green {
     margin-top: 18px;
-    margin-bottom: 27px;
+    margin-bottom: 70px;
     padding: 30px 15px;
     width: 100%;
     font-size: 30px;
