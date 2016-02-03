@@ -1,6 +1,6 @@
 .side-menu{
   width: 530px;
-  min-height: 100vh;
+  height: 100vh;
   overflow-y: scroll;
   background: url("../img/bg-menu.jpg") no-repeat center;
   background-size: cover;
@@ -10,6 +10,12 @@
   box-sizing: border-box;
   padding: 55px 30px;
   z-index: 50;
+
+  @media
+  (-webkit-min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi){
+    height: 200vh;
+  }
 
   &__btns{
     padding: 40px 0 90px;
