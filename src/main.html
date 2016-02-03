@@ -3,7 +3,24 @@
   <section class="banner">
     <h2 class="page-title">Все рестораны и доставка еды на одном сайте</h2>
 
-    <div id="ninja-slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/slider-1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-1.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- <div id="ninja-slider">
       <div class="slider-inner">
           <ul>
               <li><a class="ns-img" href="img/slider-1.jpg"><img src="" alt=""></a></li>
@@ -12,7 +29,7 @@
               <li><a class="ns-img" href="img/slider-1.jpg"><img src="" alt=""></a></li>
           </ul>
       </div>
-    </div>
+    </div> -->
     <a href="#" class="btn btn--round">Показать все рестораны</a>
   </section>
 
@@ -536,3 +553,13 @@
 
 
 @@include('htmltpl/footer.html')
+
+<script src="js/swiper.min.js"></script>
+
+<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+  })
+</script>

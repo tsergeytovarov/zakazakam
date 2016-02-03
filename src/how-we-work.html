@@ -4,7 +4,27 @@
     <div class="container">
       <h2 class="how-we-work__title">Как мы работаем</h2>
     </div>
-    <div id="ninja-slider">
+    <div class="swiper-container-2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/slide-1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide-1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide-1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide-1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide-1.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination-2"></div>
+    </div>
+   <!--  <div id="ninja-slider">
       <div class="slider-inner">
         <ul>
           <li>
@@ -24,7 +44,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
   </section>
   <section class="section who-we-are">
     <div class="container">
@@ -58,6 +78,17 @@
   </section>
 
 @@include('htmltpl/footer.html')
+
+<script src="js/swiper.min.js"></script>
+
+<script>
+  var mySwiper = new Swiper ('.swiper-container-2', {
+    loop: true,
+    pagination: '.swiper-pagination-2',
+    paginationClickable: true,
+    spaceBetween: 10,
+  })
+</script>
 
 
 
